@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.c692975a.css",
-    "main.js": "/static/js/main.2c539c65.js",
+    "main.js": "/static/js/main.ae96a70f.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/zelda.png": "/static/media/zelda.31c29e75627c6b2a62eb.png",
     "index.html": "/index.html",
     "main.c692975a.css.map": "/static/css/main.c692975a.css.map",
-    "main.2c539c65.js.map": "/static/js/main.2c539c65.js.map",
+    "main.ae96a70f.js.map": "/static/js/main.ae96a70f.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c692975a.css",
-    "static/js/main.2c539c65.js"
+    "static/js/main.ae96a70f.js"
   ]
 }
