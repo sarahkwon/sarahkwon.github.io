@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Container, Div1, Div2, Div3, Link, NavLink, Li, Img1, SocialIcons} from './HeaderStyles';
+import { Container, Div1, Div2, Div3, Link, NavLink1, NavLink2, NavLink3, Li, Img1, SocialIcons} from './HeaderStyles';
 import kino1 from './kinoSprite1.png';
 
 class Header extends Component {
@@ -15,17 +15,17 @@ class Header extends Component {
             <Div2>
               <Li>
                 <Link href="#projects">
-                  <NavLink>Projects</NavLink>
+                  <NavLink1>Projects</NavLink1>
                 </Link>
               </Li>
               <Li>
                 <Link href="#skills">
-                  <NavLink>Skills</NavLink>
+                  <NavLink2>Skills</NavLink2>
                 </Link>
               </Li>
               <Li>
                 <Link href="#resume">
-                  <NavLink>Resume</NavLink>
+                  <NavLink3>Resume</NavLink3>
                 </Link>
               </Li>
             </Div2>
