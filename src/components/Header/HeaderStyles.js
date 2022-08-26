@@ -18,6 +18,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+  
 `;
 
 export const Div2 = styled.div`
@@ -25,7 +26,6 @@ export const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 0.25rem;
-  padding-left: 1rem;
 `;
 
 export const Div3 = styled.div`
@@ -37,6 +37,19 @@ export const Div3 = styled.div`
 
 export const Link = styled.a`
 
+`;
+
+export const NavLink0 = styled.a`
+  font-size: 1.75rem;
+  line-height: 32px;
+  color: rgba(0,0,0, 0.6);
+  transition: 0.4s ease;
+  &:hover {
+    color: #000;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 1.85rem;
+  }
 `;
 
 export const NavLink1 = styled.a`
