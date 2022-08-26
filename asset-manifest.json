@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.c692975a.css",
-    "main.js": "/react-gh-pages/static/js/main.72ebe5fc.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
-    "static/media/zelda.png": "/react-gh-pages/static/media/zelda.31c29e75627c6b2a62eb.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.c692975a.css.map": "/react-gh-pages/static/css/main.c692975a.css.map",
-    "main.72ebe5fc.js.map": "/react-gh-pages/static/js/main.72ebe5fc.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.c692975a.css",
+    "main.js": "/static/js/main.2c539c65.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/zelda.png": "/static/media/zelda.31c29e75627c6b2a62eb.png",
+    "index.html": "/index.html",
+    "main.c692975a.css.map": "/static/css/main.c692975a.css.map",
+    "main.2c539c65.js.map": "/static/js/main.2c539c65.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c692975a.css",
-    "static/js/main.72ebe5fc.js"
+    "static/js/main.2c539c65.js"
   ]
 }
