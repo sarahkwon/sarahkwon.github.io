@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-
 import { Container } from './AppStyles';
 
 import Header from './components/Header/Header.js';
@@ -9,18 +8,21 @@ import Projects from './components/Projects/Projects.js';
 import Skills from './components/Skills/Skills.js';
 import Resume from './components/Resume/Resume.js';
 import Banner from './components/Banner/Banner.js';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 function App() {
     return (
-        <Container>
-          <Header/>
-          <Banner/>
-          <Projects/>
-          <Skills/>
-          <Resume/>
-          <Footer/>
-      </Container>
+        <Router>
+          <Container>
+            <Header/>
+            <Banner/>
+            <Projects/>
+            <Skills/>
+            <Resume/>
+            <Footer/>
+          </Container>
+        </Router>
       
     );
 }

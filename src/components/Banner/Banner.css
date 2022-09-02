@@ -1,0 +1,135 @@
+.background-image {
+    margin-top: 0;
+    background-image: url('../../zelda.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .background-image-container {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .banner {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 16px;
+    overflow-x: hidden; 
+
+  }
+  .tagline {
+    position:absolute;
+    margin-left: 25px;
+    z-index: 2;
+    color: white;
+    background: rgba(198,134,182, 0.5);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+.banner h1 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 25px;
+    /* line-height: normal;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+     */
+
+
+}
+
+@media (min-width: 0px) {
+    .banner h1 {
+        font-size:3rem;
+        width: 80%;
+        top: 35%;
+    } /*1rem = 16px*/
+
+    .tagline {
+        top: 27%;
+    }
+}
+
+@media (min-width: 544px) {  
+    .banner h1 {
+        font-size:3rem;
+        width: 80%;
+        top: 35%;
+    } /*1rem = 16px*/
+
+    .tagline {
+        top: 25%;
+    }
+}
+
+@media (min-width: 768px) {  
+    .banner h1 {
+        font-size:4rem;
+        width: 75%;
+        top: 35%;
+    } /*1rem = 16px*/
+
+    .tagline {
+        top: 30%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .banner h1 {
+        font-size:4rem;
+        width: 80%;
+        top: 40%;
+    } /*1rem = 16px*/
+
+    .tagline {
+        top: 33%;
+    }
+  }
+
+@media (min-width: 1200px) {  
+    .banner h1 {
+        font-size:4rem;
+        width: 50%;
+        top: 40%;
+    } /*1rem = 16px*/
+
+    .tagline {
+        top: 35%;
+    }
+}
+   
+
+.text-rotate > .wrap {
+    border-right: 0.08em solid #ddd;
+  }
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+
+    z-index: 2;
+}

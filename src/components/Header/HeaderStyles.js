@@ -5,8 +5,8 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 1rem;
+  padding: 0.75rem;
+  padding-top: 0.75rem;
 `;
 
 export const Span = styled.span`
@@ -22,14 +22,15 @@ export const Div1 = styled.div`
 `;
 
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  margin-left: 25px;
+  grid-area: 1 / 1 / 2 / 3;
   display: flex;
   justify-content: space-around;
   margin-top: 0.25rem;
 `;
 
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
+  grid-area: 1 / 6 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,9 +97,11 @@ export const Li = styled.li`
 `;
 
 export const Img1 = styled.img`
+  padding-left: 12px;
+  transform: scale(1.2);
   transition: 0.3s ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 `;
 
@@ -106,6 +109,8 @@ export const SocialIcons = styled.a`
   transition: 0.3s ease;
   color: #000;
   border-radius: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   &:hover {
       transform: scale(1.2);
       cursor: pointer;
