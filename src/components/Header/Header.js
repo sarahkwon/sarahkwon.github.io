@@ -28,13 +28,13 @@ export  const Header = () => {
   return (
     <Navbar className={scrolled ? "scrolled" : ""} fixed="top" expand="md" collapseOnSelect >
       <Navbar.Brand>
-        <img src={kino1} alt="sk" className="kino-logo"/>
+        <a href="#home"><img src={kino1} alt="sk" className="kino-logo"/></a>
         
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
+          <Nav.Link href="#about" className="nav-link">About</Nav.Link>
           <Nav.Link href="#projects" className="nav-link">Projects</Nav.Link>
           <Nav.Link href="#skills" className="nav-link">Skills</Nav.Link>
           {/* <Nav.Link href="#art" className="nav-link">My Art!</Nav.Link> */}

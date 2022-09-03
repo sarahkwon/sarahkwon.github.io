@@ -17,5 +17,6 @@ export const SectionDivider = styled.div`
   border-radius: 10px;
   background-color: #000;
 
+
   }
 `

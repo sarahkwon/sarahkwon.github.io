@@ -54,7 +54,7 @@ nav.navbar {
 
 
 .kino-logo {
-    padding-left: 12px;
+    padding-left: 1rem;
     transform: scale(1.2);
     transition: 0.3s ease;
 }
@@ -101,9 +101,9 @@ nav.navbar {
 span.navbar-text {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .navbar-toggler {
-    margin-right: 25px;
+    margin-right: 1.5rem;
 }

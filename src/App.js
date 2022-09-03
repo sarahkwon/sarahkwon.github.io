@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from './AppStyles';
 
 import Header from './components/Header/Header.js';
+import About from './components/About/About.js';
 import Footer from './components/Footer/Footer.js';
 import Projects from './components/Projects/Projects.js';
 import Skills from './components/Skills/Skills.js';
@@ -17,6 +18,7 @@ function App() {
           <Container>
             <Header/>
             <Banner/>
+            <About/>
             <Projects/>
             <Skills/>
             <Resume/>
