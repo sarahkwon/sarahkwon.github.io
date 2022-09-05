@@ -50,8 +50,10 @@ export const Banner = () => {
         <div class="background-image-container"><div class="background-image"></div></div>
         <Row classname="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my portfolio :D</span>
-            <h1>{`Hi! I'm Sarah and I'm a`} <span className="text-rotate" dataPeriod="1000" data-rotate='[ " CS Student", " Programmer", " Developer", "n Artist" ]'><span className="wrap">{text}</span></span></h1>
+            <div className="banner-contents">
+              <span className="tagline">Welcome to my portfolio :D</span>
+              <h1>{`Hi! I'm Sarah and I'm a`} <span className="text-rotate" dataPeriod="1000" data-rotate='[ " CS Student", " Programmer", " Developer", "n Artist" ]'><span className="wrap">{text}</span></span></h1>
+            </div>
           </Col>
         </Row>
     </section>
