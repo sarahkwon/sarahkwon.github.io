@@ -38,7 +38,6 @@ export  const Header = () => {
           <Nav.Link href="#projects" className="nav-link">Projects</Nav.Link>
           <Nav.Link href="#skills" className="nav-link">Skills</Nav.Link>
           {/* <Nav.Link href="#art" className="nav-link">My Art!</Nav.Link> */}
-          <Nav.Link href="#resume" className="nav-link">Resume</Nav.Link>
         </Nav>
         <span className="navbar-text">
           <div className="social-icon">

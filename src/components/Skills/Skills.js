@@ -20,7 +20,7 @@ class Skills extends Component {
             <SectionTitle>Skills</SectionTitle>
               <Row>
               {data.map((card, index) => (
-                <div class="col-md">
+                <div class="col-md-6">
                   <div className="card-section">
                     <div className="skill-card">
                         <div key={index}>

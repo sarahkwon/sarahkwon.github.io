@@ -1,5 +1,5 @@
 nav.navbar.scrolled {
-    background-color: #5ebdd0;
+    background-color: #44b3c9;
     -webkit-box-shadow: 0 8px 6px -6px #507880;
     -moz-box-shadow: 0 8px 6px -6px #507880;
     box-shadow: 0 8px 6px -6px #507880;
@@ -44,12 +44,11 @@ nav.navbar {
 
 .nav-link {
     font-weight: 500;
-    color: #000 !important;
+    color: #fff !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 24px;
-    opacity: 0.75;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 
@@ -58,6 +57,8 @@ nav.navbar {
     transform: scale(1.2);
     transition: 0.3s ease;
 }
+
+
 
 .social-icon {
     display: inline-block;
@@ -70,7 +71,7 @@ nav.navbar {
     background: rgba(64,146,94, 0.9);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 15px;
     align-items: center;
     justify-content: center;
     line-height: 1;
@@ -102,8 +103,20 @@ span.navbar-text {
     display: flex;
     align-items: center;
     margin-right: 2rem;
+    padding-left: 25px;
 }
 
 .navbar-toggler {
     margin-right: 1.5rem;
+}
+
+
+@media (min-width: 1200px) {  
+    .kino-logo {
+        margin-left: 70px;
+    }
+
+    .navbar-collapse {
+        margin-right: 50px;
+    }
 }

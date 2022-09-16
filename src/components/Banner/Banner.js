@@ -52,7 +52,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <div className="banner-contents">
               <span className="tagline">Welcome to my portfolio :D</span>
-              <h1>{`Hi! I'm Sarah and I'm`} <span className="text-rotate" dataPeriod="1000" data-rotate='[ "a CS Student", "a Programmer", "a Developer", "an Artist" ]'><span className="wrap">{text}</span></span></h1>
+              <h1>Hi! I'm <span className="my-name">Sarah Kwon</span> and I'm <span className="text-rotate" dataPeriod="1000" data-rotate='[ "a CS Student", "a Programmer", "a Developer", "an Artist" ]'><span className="wrap">{text}</span></span></h1>
             </div>
           </Col>
         </Row>

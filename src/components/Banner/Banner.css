@@ -21,7 +21,7 @@
   .banner {
     font-weight: 700;
     letter-spacing: 0.8px;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0px;
     padding: 0px;
     margin-bottom: 16px;
@@ -57,9 +57,10 @@
 
 }
 
+
 .banner-contents {
     position:absolute;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 @media (min-width: 0px) {
@@ -77,12 +78,20 @@
     .banner h1 {
         font-size: 4rem;
     }
+
 }
 
 @media (min-width: 1200px) {  
     .banner-contents {
+        top: 35%;
         width: 45%;
+        margin-left: 75px;
     }
+
+    .banner h1 {
+        font-size: 4.5rem;
+    }
+
 }
 
 

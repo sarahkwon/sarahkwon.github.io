@@ -5,6 +5,7 @@ import { Img } from './ProjectsStyles.js';
 
 import bearMS from '../../assets/bearMS.PNG';
 import campusMap from '../../assets/campusMapDemo.png';
+import './projects.css';
 
 const data = [
   {
@@ -28,18 +29,20 @@ const data = [
 class Projects extends Component {
     render() {
         return (
-          <div id="projects">
-            <SectionTitle>Projects</SectionTitle>
-            <div>
-              {data.map((card, index) => (
-                <div key={index}>
-                  <h2>{card.name}</h2>
-                  <Img src={card.image} alt="uh" />
-                  <h4>{card.desc}</h4>
-                  <p>{card.work}</p>
-                  <p>{card.visit}</p>
-                </div>
-              ))}
+          <div className="projects-section">
+            <div id="projects">
+              <SectionTitle>Projects</SectionTitle>
+              <div>
+                {data.map((card, index) => (
+                  <div key={index}>
+                    <h2>{card.name}</h2>
+                    <Img src={card.image} alt="uh" />
+                    <h4>{card.desc}</h4>
+                    <p>{card.work}</p>
+                    <p>{card.visit}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         );

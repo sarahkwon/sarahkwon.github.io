@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   background: #000;
@@ -9,4 +11,16 @@ body {
   padding: 0;
   overflow-x: hidden;
   scroll-padding-top: 75px;
+  font-family: 'Lato', sans-serif;
+}
+
+.margin-style {
+  width: 90%;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
 }
