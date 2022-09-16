@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1aacde23.css",
-    "main.js": "/static/js/main.51020617.js",
+    "main.js": "/static/js/main.25043568.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/zelda.png": "/static/media/zelda.31c29e75627c6b2a62eb.png",
     "static/media/campusMapDemo.png": "/static/media/campusMapDemo.5239d62f733b58d32596.png",
@@ -14,11 +14,11 @@
     "index.html": "/index.html",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.2c199b32fa58231fd4fe90a9efd5b3e2.svg",
     "main.1aacde23.css.map": "/static/css/main.1aacde23.css.map",
-    "main.51020617.js.map": "/static/js/main.51020617.js.map",
+    "main.25043568.js.map": "/static/js/main.25043568.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1aacde23.css",
-    "static/js/main.51020617.js"
+    "static/js/main.25043568.js"
   ]
 }
