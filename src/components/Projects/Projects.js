@@ -17,7 +17,7 @@ const data = [
     id: 0
   },
   {
-    name: "MapleStory Emulator",
+    name: "Bear (MMORPG)",
     desc: "An online social hub for Web3 users where players within the community can interact through in-game events and guilds.",
     image:  bearMS,
     work: "Develop, debug, and implement in-game features in Java/Javascript :: Navigate through a large-scale project :: User and Server data management in a MySQL database ",
