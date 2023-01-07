@@ -18,8 +18,8 @@ export  const About = () => {
           </p>
           
         </div>
-        <p>I already mentioned it in the banner above, but hi! My name is Sarah Kwon and I'm currently a student studying Computer Science at UCSB. I'm currently interested in Software Engineering, Game Development, and Web Development and I'm spending my time learning more about these fields through a few projects that I have started! One that I especially love working on is the online game (Bear) that I have been developing with a few others. You can read all about what I do in the project in my Projects section! We're hoping to open up a website for players sometime, so I hope that I can link it here soon.</p>
-        <p>In my free time, I like to play games, watch anime/Netflix, and draw (fun fact: the artwork for my banner was drawn by me!). You can view more of my art on my Twitter profile!</p>
+        <p>I already mentioned it in the banner above, but hi! My name is Sarah Kwon and I'm currently a student studying Computer Science at UCSB. Currently, I'm focusing on learning React.js, and I have also recently completed developing my first game!</p>
+        <p>In my free time, I like to play games, watch shows/movies, build mini lego sets, and draw (fun fact: the artwork for my banner was drawn by me!). You can view more of my art on my Twitter profile! I also enjoy cooking, especially when I have a huge craving for a specific dish.</p>
     </div>
   );
 }
