@@ -1,0 +1,15 @@
+.scrolled {
+  background-color: #44b3c9;
+  -webkit-box-shadow: 0 8px 6px -6px #507880;
+  -moz-box-shadow: 0 8px 6px -6px #507880;
+  box-shadow: 0 8px 6px -6px #507880;
+}
+
+nav.navbar {
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999; */
+  transition:  0.32s ease-in-out;
+}
+

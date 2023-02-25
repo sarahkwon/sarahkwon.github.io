@@ -1,0 +1,50 @@
+import { useState, useEffect } from 'react';
+
+import { Nav, Navbar } from 'react-bootstrap'
+
+import kinoSprite from '../img/kinoSprite1.png'
+import Socials from './Socials'
+
+import "../styles/NavigationBar.css"
+
+const NavigationBar = (props) => {
+  const [scrolled, setScrolled] = useState(false)
+
+  //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+        console.log(scrolled)
+      } else {
+        setScrolled(false)
+        console.log(scrolled)
+      }
+    }
+
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [scrolled])
+
+  return (
+    <Navbar className={ scrolled ? "scrolled" : "" } fixed="top" expand="md" collapseOnSelect>
+      <Navbar.Brand>
+        <a href="#home">
+          <img src={kinoSprite} alt="kino"/>
+        </a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ms-auto">
+          <Nav.Link href="#about" className="nav-link">About</Nav.Link>
+          <Nav.Link href="#projects" className="nav-link">Projects</Nav.Link>
+          <Nav.Link href="#skills" className="nav-link">Skills</Nav.Link>
+        </Nav>
+        <Socials/>
+      </Navbar.Collapse>
+    </Navbar>
+  )
+}
+
+export default NavigationBar

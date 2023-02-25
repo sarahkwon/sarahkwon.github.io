@@ -1,0 +1,20 @@
+.socials_social-icons {
+  display: inline-block;
+}
+
+.socials_social-icons a {
+  width: 42px;
+  height: 42px;
+  background: rgba(64,146,94, 0.9);
+  display: inline-flex;
+  border-radius: 50%;
+  justify-content: center;
+  border: 1px solid rgba(102,177,108, 0.5);
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.socials_social-icons img {
+  width: 60%;
+}
