@@ -1,0 +1,9 @@
+
+.banner_bg-image {
+  background: url("../img/zelda72.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
