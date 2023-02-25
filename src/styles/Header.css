@@ -1,0 +1,13 @@
+.header_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* .header_container h1 {
+  font-size: 3rem;
+} */
