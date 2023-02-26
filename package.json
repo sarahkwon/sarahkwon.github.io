@@ -7,9 +7,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "d3": "^7.8.2",
+    "d3-force": "^3.0.0",
+    "flickity": "^2.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-flickity-component": "^4.0.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 
 import kinoSprite from '../img/kinoSprite1.png'
-import Socials from './Socials'
 
 import "../styles/NavigationBar.css"
 
@@ -41,7 +40,6 @@ const NavigationBar = (props) => {
           <Nav.Link href="#projects" className="nav-link">Projects</Nav.Link>
           <Nav.Link href="#skills" className="nav-link">Skills</Nav.Link>
         </Nav>
-        <Socials/>
       </Navbar.Collapse>
     </Navbar>
   )
