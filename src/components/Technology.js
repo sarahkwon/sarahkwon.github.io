@@ -1,10 +1,11 @@
 
+import Header from './Header'
 
 const Technology = () => {
 
   return (
     <div>
-        hi
+        <Header text="Technology"/>
     </div>
   )
 }

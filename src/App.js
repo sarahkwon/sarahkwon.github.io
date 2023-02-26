@@ -8,13 +8,14 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <div style ={{backgroundColor: '#4783a3'}}>
+    <div className="app">
       <NavigationBar/>
       <Banner/>
-      <AboutMe/>
-      <Projects/>
-      <Technology/>
-      
+      <div className="app-wrapper">
+        <AboutMe/>
+        <Projects/>
+        <Technology/>
+      </div>
     </div>
     
   );

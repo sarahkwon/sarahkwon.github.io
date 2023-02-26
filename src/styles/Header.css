@@ -1,7 +1,7 @@
 .header_container {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /* .header_container h1 {

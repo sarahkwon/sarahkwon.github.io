@@ -3,21 +3,39 @@ import Flickity from 'react-flickity-component'
 import CarouselCard from './CarouselCard'
 
 import 'flickity/dist/flickity.css'
-import bearMS from '../img/bearMS.png'
-import campusMaps from "../img/campusMapDemo.png"
-import potionShop from "../img/Capture2.png"
+import '../styles/Carousel.css'
+
+const projects = [
+  {
+    image: require('../img/bearMS.png'),
+    name: "Bear: MMORPG",
+    description: "A MapleStory emulator with custom features implemented in Java, Javascript, SQL, and Assembly."
+  },
+  {
+    image: require("../img/campusMapDemo.png"),
+    name: "Interactive Campus Maps",
+    description: "Crowd-sourced platform created to help students navigate around their university campus."
+  },
+  {
+    image: require("../img/Capture2.png"),
+    name: "Potion Shopkeeper",
+    description: "Business simulation game where you buy ingredients, craft potions, and sell to customers."
+  }
+]
 
 const flickityOptions = {
-
+  draggable: true,
+  initialIndex: 1
 }
 
 const Carousel = () => {
   return (
-    <Flickity>
-      <CarouselCard image={bearMS}/>
-      <CarouselCard image={campusMaps}/>
-      <CarouselCard image={potionShop}/>
-    </Flickity>
+    <div className="carousel-container">
+      <Flickity options={flickityOptions} cellAlign={"left"}>
+        {projects.map((project) => <CarouselCard image={project.image} name={project.name} description={project.description}/> )}
+      </Flickity>
+    </div>
+    
   )
 }
 
