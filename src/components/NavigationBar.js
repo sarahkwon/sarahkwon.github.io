@@ -28,17 +28,18 @@ const NavigationBar = (props) => {
 
   return (
       <Navbar className={`${ scrolled ? "scrolled" : "" }`}fixed="top" expand="md" collapseOnSelect>
-        <Navbar.Brand style={{marginLeft: "10%"}} >
+        <Navbar.Brand style={{marginLeft: "5%"}} >
           <a href="#home">
             <img src={kinoSprite} alt="kino"/>
           </a>
         </Navbar.Brand>
-        <Navbar.Toggle style={{marginRight: "10%"}}/>
-        <Navbar.Collapse style={{marginRight: "10%"}} className="navbar-content-container" id="basic-navbar-nav">
+        <Navbar.Toggle style={{marginRight: "5%"}}/>
+        <Navbar.Collapse style={{marginRight: "5%"}} className="navbar-content-container" id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#about" className="nav-link">About</Nav.Link>
             <Nav.Link href="#projects" className="nav-link">Projects</Nav.Link>
             <Nav.Link href="#technology" className="nav-link">Technology</Nav.Link>
+            <Nav.Link href="#art" className="nav-link">Artworks</Nav.Link>
             <Nav.Link href="#contact" className="nav-link">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
