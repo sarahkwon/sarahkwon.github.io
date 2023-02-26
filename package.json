@@ -10,10 +10,13 @@
     "d3": "^7.8.2",
     "d3-force": "^3.0.0",
     "flickity": "^2.3.0",
+    "highcharts": "^10.3.3",
+    "highcharts-more": "^0.1.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-flickity-component": "^4.0.3",
+    "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

@@ -1,3 +1,8 @@
+.projects-section {
+  background-color: #313442;
+  padding-bottom: 5em;
+}
+
 .projects_container {
   justify-content: center;
 	display: flex;

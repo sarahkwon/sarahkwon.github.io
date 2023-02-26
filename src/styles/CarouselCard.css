@@ -1,5 +1,6 @@
 .carousel-card {
-  width: 450px;
+  display: block;
+  max-width: 450px;
   margin-right: 25px;
   border-radius: 10px;
   border: solid #66b16c;
@@ -16,8 +17,8 @@
 .img-container {
   overflow: hidden;
   border-radius: 10px;
-  width: 400px;
-  height:250px;
+  max-width: 400px;
+  max-height:250px;
   margin-top: 25px;
   margin-right: 25px;
   margin-left: 25px;

@@ -2,6 +2,7 @@
 
 import Header from './Header'
 import Carousel from './Carousel'
+import {Container} from 'react-bootstrap'
 
 import '../styles/Projects.css'
 
@@ -15,9 +16,11 @@ import '../styles/Projects.css'
 const Projects = () => {
 
   return (
-    <div>
-      <Header text="Projects"/>
-      <Carousel/>
+    <div className="projects-section">
+      <Container id="projects">
+        <Header text="Projects"/>
+        <Carousel/>
+      </Container>
     </div>
   )
 }

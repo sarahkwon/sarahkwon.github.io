@@ -1,7 +1,15 @@
-.aboutMe_container {
+.about-section {
+  padding-bottom: 5em;
+}
+
+.about-column {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+}
+
+.about-column img {
+  width: 100%;
+  max-width: 500px;
+  
 }

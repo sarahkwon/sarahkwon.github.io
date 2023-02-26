@@ -4,19 +4,24 @@ import Banner from './components/Banner.js'
 import AboutMe from './components/AboutMe.js'
 import Projects from './components/Projects.js'
 import Technology from './components/Technology.js'
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <div className="app">
-      <NavigationBar/>
-      <Banner/>
-      <div className="app-wrapper">
-        <AboutMe/>
-        <Projects/>
-        <Technology/>
-      </div>
-    </div>
+    <body className="app">
+      <Router>
+        <NavigationBar/>
+        <Banner/>
+        <div className="app-wrapper">
+          <AboutMe/>
+          <Projects/>
+          <Technology/>
+        </div>
+      </Router>
+      
+     </body>
     
   );
 }

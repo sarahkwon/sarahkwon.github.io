@@ -4,8 +4,10 @@ import Header from './Header'
 const Technology = () => {
 
   return (
-    <div>
+    <div id="technology">
         <Header text="Technology"/>
+
+
     </div>
   )
 }
