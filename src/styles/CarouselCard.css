@@ -1,0 +1,15 @@
+
+
+.carousel-card img {
+  
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 25px;
+  width: 400px;
+  height:250px;
+  margin: 25px;
+}
