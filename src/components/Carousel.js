@@ -1,6 +1,6 @@
 import Flickity from 'react-flickity-component'
 
-import CarouselCard from './CarouselCard'
+import ProjectCard from './ProjectCard'
 
 import 'flickity/dist/flickity.css'
 import '../styles/Carousel.css'
@@ -31,9 +31,9 @@ const flickityOptions = {
 const Carousel = () => {
   return (
     <div className="carousel-container">
-      <Flickity options={flickityOptions} cellAlign={"left"}>
-        {projects.map((project) => <CarouselCard image={project.image} name={project.name} description={project.description}/> )}
-      </Flickity>
+      {/* <Flickity options={flickityOptions} cellAlign={"left"}> */}
+        {projects.map((project) => <ProjectCard image={project.image} name={project.name} description={project.description}/> )}
+      {/* </Flickity> */}
     </div>
     
   )
