@@ -25,6 +25,7 @@ function App() {
         <Spacer height='15vh' layerStyle="aboutMe"/>
         <AboutMe/>
         <Spacer height='15vh' layerStyle="aboutMe"/>
+        <Projects/>
       </Router>
     </ChakraProvider>  
     

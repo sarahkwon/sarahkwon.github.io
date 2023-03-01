@@ -21,6 +21,13 @@ const theme = extendTheme({
       backgroundColor: '#234152',
       paddingLeft: '25px',
       paddingRight: '25px'
+    },
+    projects: {
+      backgroundColor: '#5da3b6',
+    },
+    banner: {
+      paddingRight: '25px',
+      paddingLeft: '25px'
     }
   },
   fonts: {

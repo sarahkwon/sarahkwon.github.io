@@ -11,13 +11,13 @@ const Header = (props) => {
         <Heading textStyle='h2' size='2xl' as='h2'>
         <Highlight
                   query={highlight}
-                  styles={{ px: '2', py: '1', bg: 'pink.200'}}
+                  styles={{ px: '2', py: '1', bg: color}}
                 >
           {text}
           </Highlight>
         </Heading>
       </Center>
-      <Spacer height="48px"/>
+      <Spacer height="36px"/>
     </Box>
     
   )

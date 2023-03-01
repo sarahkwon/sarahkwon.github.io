@@ -5,7 +5,7 @@ import "../styles/Banner.css"
 const Banner = () => {
 
   return (
-    <Box className="banner_bg-image" id="home">
+    <Box layerStyle='banner' className="banner_bg-image" id="home">
       <Center h='100%'>
         <SimpleGrid columns={1}>
           <Heading textStyle='h2' size='3xl' as='h2'>
