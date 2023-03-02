@@ -66,7 +66,7 @@ const Technology = () => {
     <Box id="technology" layerStyle='technology' paddingTop='50px'>
       <Header text="Technologies" highlight={["Technologies"]} color="pink.200" textColor='black'/>
       <Container maxW='7xl'>
-        <SimpleGrid columns={[1,1, 2]}>
+        <SimpleGrid columns={[1, 1, 2]}>
             <Center>
                 <SimpleGrid columns={[1, 1, 2]} spacing={3} w='80%'>
                   {data.map((item, idx) => {
