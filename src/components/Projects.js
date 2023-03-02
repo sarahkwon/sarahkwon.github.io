@@ -1,5 +1,6 @@
 // import '../styles/AboutMe.css'
 
+import { useState } from 'react'
 import Header from './Header'
 import React from 'react';
 import { Box } from '@chakra-ui/react'
@@ -10,6 +11,7 @@ import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Container } from '@
 import Campus from '../img/campusMapDemo.png'
 import Potion from '../img/PotionShop.png'
 import Maple from '../img/bearMS.png'
+import Portfolio from '../img/Portfolio.PNG'
 
 import '../styles/Projects.css'
 
@@ -41,11 +43,12 @@ const projects = [
 
 const Projects= () => {
 
+
   return (
     <Box paddingTop='50px' layerStyle='projects'>
         <Header text="Projects" highlight={['Projects']} color='pink.200' textColor='black'/>
           <Container maxW='7xl'>
-            <SimpleGrid minChildWidth='250px' columns={[1, 3]} spacing={5}>
+            <SimpleGrid columns={[1, 3, 3]} spacing={5}>
                 {projects.map((project) => {
                   return <ProjectCard key={project.id} id={project.id} name={project.name} image={project.image} description={project.description} tags={project.tags}/>
                 })}

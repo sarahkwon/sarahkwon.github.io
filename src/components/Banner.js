@@ -16,7 +16,7 @@ const Banner = () => {
               Hii, I'm Sarah :-)
             </Highlight>
           </Heading>
-          <Heading textStyle='h4' size='xl' as='h4'>Wassupppp</Heading>
+          <Heading textStyle='h4' size='xl' as='h4'>Artwork by: me</Heading>
         </SimpleGrid>
       </Center>
     </Box>

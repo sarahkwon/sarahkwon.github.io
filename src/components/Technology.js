@@ -5,7 +5,7 @@ import BubbleChart from './BubbleChart'
 import { Box, Container, SimpleGrid, Center} from '@chakra-ui/react'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm, DiHtml5} from 'react-icons/di'
-import { SiChakraui, SiCplusplus, SiJavascript, SiEslint, SiJest, SiCss3} from 'react-icons/si'
+import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3} from 'react-icons/si'
 
 const data = [
   {

@@ -42,6 +42,9 @@ const theme = extendTheme({
       paddingRight: '25px',
       paddingLeft: '25px',
       backgroundColor: '#234152'
+    },
+    artworks: {
+      backgroundColor: '#234152'
     }
   },
   fonts: {

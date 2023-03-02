@@ -2,7 +2,6 @@ import Highcharts from 'highcharts'
 import highchartsMore from 'highcharts/highcharts-more'
 import HighchartsReact from 'highcharts-react-official'
 import HC_patternFill from "highcharts-pattern-fill";
-import * as ReactDOMServer from 'react-dom/server'
 
 highchartsMore(Highcharts);
 HC_patternFill(Highcharts);
