@@ -8,7 +8,7 @@ import Artworks from './components/Artworks.js'
 import Contacts from './components/Contacts.js'
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { ChakraProvider, Spacer, SafeArea } from '@chakra-ui/react'
+import { ChakraProvider, Spacer, Box } from '@chakra-ui/react'
 import theme from './theme'
 
 import '@fontsource/raleway/700.css'
@@ -21,7 +21,12 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <SafeArea>
+      <Box
+        paddingTop={{ base: "env(safe-area-inset-top)", md: "0" }}
+        paddingBottom={{ base: "env(safe-area-inset-bottom)", md: "0" }}
+        paddingLeft={{ base: "env(safe-area-inset-left)", md: "0" }}
+        paddingRight={{ base: "env(safe-area-inset-right)", md: "0" }}
+      >
         <Router>
           <NavigationBar/>
           <Banner/>
@@ -37,7 +42,7 @@ function App() {
           <Contacts/>
           <Spacer height='8vh' layerStyle="artworks"/>
         </Router>
-      </SafeArea>
+      </Box>
     </ChakraProvider>  
     
   );
