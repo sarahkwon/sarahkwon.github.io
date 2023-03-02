@@ -14,6 +14,11 @@ const theme = extendTheme({
       fontWeight: 400,
       color: '#CCCCCC',
       fontSize: '16px'
+    },
+    cardText: {
+      fontWeight: 400,
+      color: '#f5edf7',
+      fontSize: '16px'
     }
   },
   layerStyles: {

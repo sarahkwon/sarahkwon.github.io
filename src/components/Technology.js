@@ -1,14 +1,9 @@
-
 import Header from './Header'
 
 const Technology = () => {
 
   return (
-    <div id="technology">
-        <Header text="Technology"/>
-
-
-    </div>
+    <Header text="Technology" highlight={["Technology"]} color="orange" textColor='black'/>
   )
 }
 

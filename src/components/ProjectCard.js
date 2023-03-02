@@ -1,22 +1,32 @@
-import { Card, CardHeader, CardBody, CardFooter, Image, Stack, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Tag, Wrap } from '@chakra-ui/react'
+
+import TechTag from './TechTag'
 
 const ProjectCard = (props) => {
-  const { image, alt, name, description } = props
+  const { image, name, description, tags } = props
+  console.log(tags)
   return (
-    <Card maxW='sm'>
+    <Card maxW='sm' boxShadow='4px 4px 2px #246043' p='0.5' bg='#368264'>
       <CardBody>
         <Image 
           src={image}
-          alt={alt}
+          alt='alt'
           borderRadius='md'
         />
-        <Stack mt='6' spacing='3'>
-          <Heading size='md'>{name}</Heading>
-          <Text>
+        <Stack mt='6'>
+            <Heading textStyle='h4' size='md'>
+              {name}
+            </Heading>
+          <Text textStyle='cardText'>
             {description}
           </Text>
         </Stack>
       </CardBody>
+      <CardFooter>
+        <Wrap>
+          {tags.map((tag) => <TechTag text={tag}/>)}
+        </Wrap>
+      </CardFooter>
     </Card>
   )
 }

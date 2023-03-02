@@ -6,7 +6,7 @@ import { Highlight, Flex, Center, Text, Stack, Box, Image } from '@chakra-ui/rea
 const AboutMe = () => {
   return (
     <Box layerStyle='aboutMe'>
-      <Header text="About Me" highlight={['About']} color="pink.200" />
+      <Header text="About Me" highlight={['About']} color="pink.200" textColor='black' />
       <Center>
         <Stack direction={['column', 'row']} spacing={10}>
             <Flex maxWidth='md' justifyContent='center' alignItems='center'>
