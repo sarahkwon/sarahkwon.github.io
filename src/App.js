@@ -8,7 +8,7 @@ import Artworks from './components/Artworks.js'
 import Contacts from './components/Contacts.js'
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { ChakraProvider, Spacer } from '@chakra-ui/react'
+import { ChakraProvider, Spacer, SafeArea } from '@chakra-ui/react'
 import theme from './theme'
 
 import '@fontsource/raleway/700.css'
@@ -21,21 +21,23 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router>
-        <NavigationBar/>
-        <Banner/>
-        <Spacer height='15vh' layerStyle="aboutMe"/>
-        <AboutMe/>
-        <Spacer height='20vh' layerStyle="aboutMe"/>
-        <Projects/>
-        <Spacer height='15vh' layerStyle="projects"/>
-        <Technology/>
-        <Spacer height='15vh' layerStyle="aboutMe"/>
-        <Artworks/>
-        <Spacer height='15vh' layerStyle="artworks"/>
-        <Contacts/>
-        <Spacer height='8vh' layerStyle="artworks"/>
-      </Router>
+      <SafeArea>
+        <Router>
+          <NavigationBar/>
+          <Banner/>
+          <Spacer height='15vh' layerStyle="aboutMe"/>
+          <AboutMe/>
+          <Spacer height='20vh' layerStyle="aboutMe"/>
+          <Projects/>
+          <Spacer height='15vh' layerStyle="projects"/>
+          <Technology/>
+          <Spacer height='15vh' layerStyle="aboutMe"/>
+          <Artworks/>
+          <Spacer height='15vh' layerStyle="artworks"/>
+          <Contacts/>
+          <Spacer height='8vh' layerStyle="artworks"/>
+        </Router>
+      </SafeArea>
     </ChakraProvider>  
     
   );
