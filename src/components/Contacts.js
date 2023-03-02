@@ -1,11 +1,11 @@
 import Header from './Header'
 import Socials from './Socials'
 
-import { Box, Center, Container, Text, VStack, Link } from '@chakra-ui/react'
+import { Box, Center, Text, VStack } from '@chakra-ui/react'
 
 const Contacts = () => {
   return (
-    <Box layerStyle="contacts">
+    <Box id="contacts" layerStyle="contacts">
       <Header text="Contact Me" highlight={['Contact']} color="pink.200" textColor="black"/>
       <Center>
         <VStack p={1}>

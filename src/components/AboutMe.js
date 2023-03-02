@@ -5,7 +5,7 @@ import { Flex, Center, Text, Stack, Box, Image } from '@chakra-ui/react'
 
 const AboutMe = () => {
   return (
-    <Box layerStyle='aboutMe'>
+    <Box id="aboutMe" layerStyle='aboutMe'>
       <Header text="About Me" highlight={['About']} color="pink.200" textColor='black' />
       <Center>
         <Stack direction={['column', 'row']} spacing={10}>
