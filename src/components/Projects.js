@@ -15,18 +15,21 @@ import '../styles/Projects.css'
 
 const projects = [
   {
+    id: 0,
     image: `${Maple}`,
     name: "Bear: MMORPG",
     description: "A MapleStory emulator with custom features implemented in Java, Javascript, SQL, and Assembly.",
     tags: ['Javascript', 'Java', 'Assembly', 'SQL', 'mySQL Workbench', ]
   },
   {
+    id: 1,
     image: `${Campus}`,
     name: "Interactive Campus Maps",
     description: "Crowd-sourced platform created to help students navigate around their university campus.",
     tags: ['Typescript', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'Redux']
   },
   {
+    id: 2,
     image: `${Potion}`,
     name: "Potion Shopkeeper",
     description: "Business simulation game where you buy ingredients, craft potions, and sell to customers.",
@@ -40,11 +43,11 @@ const Projects= () => {
 
   return (
     <Box paddingTop='50px' layerStyle='projects'>
-        <Header text="Projects" highlight={['Projects']} color='#368264' textColor='white'/>
-          <Container maxW='6xl'>
+        <Header text="Projects" highlight={['Projects']} color='pink.200' textColor='black'/>
+          <Container maxW='7xl'>
             <SimpleGrid minChildWidth='250px' columns={[1, 3]} spacing={5}>
                 {projects.map((project) => {
-                  return <ProjectCard name={project.name} image={project.image} description={project.description} tags={project.tags}/>
+                  return <ProjectCard key={project.id} id={project.id} name={project.name} image={project.image} description={project.description} tags={project.tags}/>
                 })}
               </SimpleGrid>
           </Container>

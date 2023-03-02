@@ -15,9 +15,13 @@ const theme = extendTheme({
       color: '#CCCCCC',
       fontSize: '16px'
     },
+    cardHeader: {
+      fontWeight: 600,
+      color: 'black',
+    },
     cardText: {
       fontWeight: 400,
-      color: '#f5edf7',
+      color: 'black',
       fontSize: '16px'
     }
   },
@@ -28,11 +32,16 @@ const theme = extendTheme({
       paddingRight: '25px'
     },
     projects: {
-      backgroundColor: '#5da3b6',
+      backgroundColor: '#234152',
     },
     banner: {
       paddingRight: '25px',
       paddingLeft: '25px'
+    },
+    technology: {
+      paddingRight: '25px',
+      paddingLeft: '25px',
+      backgroundColor: '#234152'
     }
   },
   fonts: {

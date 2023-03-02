@@ -24,10 +24,11 @@ function App() {
         <Banner/>
         <Spacer height='15vh' layerStyle="aboutMe"/>
         <AboutMe/>
-        <Spacer height='15vh' layerStyle="aboutMe"/>
+        <Spacer height='20vh' layerStyle="aboutMe"/>
         <Projects/>
         <Spacer height='15vh' layerStyle="projects"/>
         <Technology/>
+        <Spacer height='15vh' layerStyle="aboutMe"/>
       </Router>
     </ChakraProvider>  
     
