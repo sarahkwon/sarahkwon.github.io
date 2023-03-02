@@ -21,7 +21,7 @@ const Artworks = () => {
   }
 
   return (
-    <Box layerStyle="artworks">
+    <Box layerStyle="artworks" id="artworks">
       <Header text="My Art :)" highlight={['Art']} color="pink.200" textColor="black"/>
       <Container maxW='7xl'>
         <Box

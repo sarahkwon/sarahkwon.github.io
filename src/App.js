@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe.js'
 import Projects from './components/Projects.js'
 import Technology from './components/Technology.js'
 import Artworks from './components/Artworks.js'
+import Contacts from './components/Contacts.js'
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { ChakraProvider, Spacer } from '@chakra-ui/react'
@@ -31,6 +32,9 @@ function App() {
         <Technology/>
         <Spacer height='15vh' layerStyle="aboutMe"/>
         <Artworks/>
+        <Spacer height='15vh' layerStyle="artworks"/>
+        <Contacts/>
+        <Spacer height='15vh' layerStyle="artworks"/>
       </Router>
     </ChakraProvider>  
     

@@ -45,6 +45,9 @@ const theme = extendTheme({
     },
     artworks: {
       backgroundColor: '#234152'
+    },
+    contacts: {
+      backgroundColor: '#234152'
     }
   },
   fonts: {

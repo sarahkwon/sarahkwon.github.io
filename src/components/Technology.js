@@ -63,7 +63,7 @@ const data = [
 const Technology = () => {
 
   return (
-    <Box layerStyle='technology' paddingTop='50px'>
+    <Box id="#technology" layerStyle='technology' paddingTop='50px'>
       <Header text="Technologies" highlight={["Technologies"]} color="yellow.100" textColor='black'/>
       <Container maxW='7xl'>
         <SimpleGrid columns={[1,1, 2]}>

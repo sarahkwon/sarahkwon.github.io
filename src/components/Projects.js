@@ -43,7 +43,7 @@ const Projects= () => {
 
 
   return (
-    <Box paddingTop='50px' layerStyle='projects'>
+    <Box id="projects" paddingTop='50px' layerStyle='projects'>
         <Header text="Projects" highlight={['Projects']} color='pink.200' textColor='black'/>
           <Container maxW='7xl'>
             <SimpleGrid columns={[1, 3, 3]} spacing={5}>
