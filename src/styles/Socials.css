@@ -9,6 +9,7 @@
   display: inline-flex;
   border-radius: 50%;
   justify-content: center;
+  align-items: center;
   border: 1px solid rgba(102,177,108, 0.5);
 
   margin-left: 10px;

@@ -34,7 +34,7 @@ function App() {
         <Artworks/>
         <Spacer height='15vh' layerStyle="artworks"/>
         <Contacts/>
-        <Spacer height='15vh' layerStyle="artworks"/>
+        <Spacer height='8vh' layerStyle="artworks"/>
       </Router>
     </ChakraProvider>  
     
