@@ -1,7 +1,7 @@
 import Header from './Header'
 
 import {useState} from 'react'
-import { Box, Container, Flex, Grid, Image, GridItem, Button, Center } from '@chakra-ui/react'
+import { Box, Container, Image, Button, Center } from '@chakra-ui/react'
 const images = [];
 function importAll(r) {
   r.keys().forEach((key) => {
@@ -13,7 +13,7 @@ importAll(require.context('../img/artworks', false, /\.(png|jpe?g|svg)$/));
 
 const Artworks = () => {
   const [showMore, setShowMore] = useState(false)
-  const dataForDisplay = showMore ? images : images.slice(0, 10)
+  const dataForDisplay = showMore ? images : images.slice(0, 12)
 
   const handleShowMore = (e) => {
     e.preventDefault()

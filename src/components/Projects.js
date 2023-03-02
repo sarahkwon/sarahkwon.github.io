@@ -1,17 +1,15 @@
 // import '../styles/AboutMe.css'
 
-import { useState } from 'react'
 import Header from './Header'
 import React from 'react';
 import { Box } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 
-import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Container } from '@chakra-ui/react'
+import { SimpleGrid, Container } from '@chakra-ui/react'
 
 import Campus from '../img/campusMapDemo.png'
 import Potion from '../img/PotionShop.png'
 import Maple from '../img/bearMS.png'
-import Portfolio from '../img/Portfolio.PNG'
 
 import '../styles/Projects.css'
 
