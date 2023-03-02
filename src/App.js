@@ -26,6 +26,7 @@ function App() {
         paddingBottom={{ base: "env(safe-area-inset-bottom)", md: "0" }}
         paddingLeft={{ base: "env(safe-area-inset-left)", md: "0" }}
         paddingRight={{ base: "env(safe-area-inset-right)", md: "0" }}
+        bg='#234152'
       >
         <Router>
           <NavigationBar/>
