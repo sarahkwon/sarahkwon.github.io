@@ -9,7 +9,7 @@ Visit here: https://sarahkwon.github.io/
 
 ## How It's Made:
 
-**Tech Used** HTML, CSS3, Javascript, React
+**Tech Used:** HTML, CSS3, Javascript, React
 
 The project's interface was built using Chakra UI and styled with the Chakra UI's Styled System
 
