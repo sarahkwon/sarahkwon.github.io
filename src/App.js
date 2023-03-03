@@ -22,15 +22,15 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box>
+      <Box bg='#111111'>
         <Router>
           <NavigationBar/>
           <Banner/>
-          <Section paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
-          <Section paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
-          <Section paddingTop='20vh' section={<Technology/>} layerStyle='technology'/>
-          <Section paddingTop='20vh' section={<Artworks/>} layerStyle='artworks'/>
-          <Section paddingTop='20vh' section={<Contacts/>} layerStyle='contacts'/>
+          <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
+          <Section id='projects' paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
+          <Section id='technology' paddingTop='15vh' section={<Technology/>} layerStyle='technology'/>
+          <Section id='artworks' paddingTop='20vh' section={<Artworks/>} layerStyle='artworks'/>
+          <Section id='contacts' paddingTop='20vh' section={<Contacts/>} layerStyle='contacts'/>
           <Spacer height='8vh' layerStyle="artworks"/>
         </Router>
       </Box>

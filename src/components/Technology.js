@@ -3,7 +3,8 @@ import TechCard from './TechCard'
 import BubbleChart from './BubbleChart'
 import MiniGuy from './MiniGuy'
 
-import { Box, Container, SimpleGrid, Center, Image } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Center, Image, SlideFade } from '@chakra-ui/react'
+import { useInView } from 'react-intersection-observer'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm, DiHtml5} from 'react-icons/di'
 import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC} from 'react-icons/si'
@@ -86,17 +87,26 @@ const data = [
 ]
 
 const Technology = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+    rootMargin: "0px 0px -10% 0px", // Wait until the element is 20% from the viewport bottom
+  })
 
   return (
-    <Box id="technology" layerStyle='technology' paddingTop='25px'>
+    <Box layerStyle='technology' paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
       <Header text="Technologies" highlight={["Technologies"]} color="#66b16c" textColor='black'/>
       <Container maxW='7xl'>
         <SimpleGrid columns={[1, 1, 2]}>
             <Center>
-                <SimpleGrid columns={[1, 1, 2]} spacing={3} w='80%'>
+                <SimpleGrid columns={[1, 1, 2]} spacing={3} w='95%'>
                   {data.map((item, idx) => {
-                    return <TechCard key={idx} icon={item.icon} name={item.name}/>
+                    return (
+                      <SlideFade in={inView} ref={ref} offsetX="-30px">
+                        <TechCard key={idx} icon={item.icon} name={item.name}/>
+                      </SlideFade>
+                    )
                   })}
                 </SimpleGrid>
             </Center>
