@@ -21,14 +21,14 @@ const projects = [
     id: 0,
     image: `${Maple}`,
     name: "Bear: MMORPG",
-    description: "A MapleStory emulator with custom features implemented in Java, Javascript, SQL, and Assembly.",
+    description: "A MapleStory emulator with custom features such as a server-wide bingo game, customized NPCs/map designs/quests, and new items.",
     tags: ['Javascript', 'Java', 'Assembly', 'SQL', 'mySQL Workbench', ]
   },
   {
     id: 1,
     image: `${Campus}`,
     name: "Interactive Campus Maps",
-    description: "Crowd-sourced platform created to help students navigate around their university campus.",
+    description: "Crowd-sourced platform created to help students navigate around their university campus. Implemented the frontend for the comment section, photo section, and pop-ups.",
     tags: ['Typescript', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'Redux']
   },
   {
