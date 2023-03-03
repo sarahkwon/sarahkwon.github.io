@@ -3,7 +3,7 @@ import TechCard from './TechCard'
 import BubbleChart from './BubbleChart'
 import MiniGuy from './MiniGuy'
 
-import { Box, Container, SimpleGrid, Center, Image, SlideFade } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Center, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm, DiHtml5} from 'react-icons/di'

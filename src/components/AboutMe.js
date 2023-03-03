@@ -20,10 +20,11 @@ const AboutMe = () => {
             <Flex maxWidth='md' justifyContent='center' alignItems='center'>
               <SlideFade in={inView} ref={ref} offsetY='40px'>
                 <Text maxWidth='md' textStyle='text'>
-                  Hello! I'm a Computer Science major at UCSB about to graduate this summer. Currently, my interests lie in front-end development and I'm working on understanding React and its many libraries. In order to have a better understanding of best practices and fundamentals, I'm taking an online course on full-stack development while building my own projects in parallel. 
+                  Hello! I'm Sarah and I'm a 4th Computer Science major at UCSB. 
+                  Currently, my interests lie in front-end development and my focus right now is building a solid understanding of React and the tools it offers. In order to accomplish this, I'm taking an online course on full-stack development while building my own applications in parallel. 
                   <br/>
                   <br/>
-                  On my own time, I like to draw, play games, and make cute island designs in Animal Crossing! You can view my artworks <a href="#artworks">here</a>!
+                  On my own time, I like to draw, play games, and make cute island designs in Animal Crossing!
                 </Text>
               </SlideFade>
             </Flex>
