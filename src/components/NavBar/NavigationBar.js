@@ -93,10 +93,8 @@ const NavBarContainer = ({ children, ...props }) => {
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true)
-        console.log(scrolled)
       } else {
         setScrolled(false)
-        console.log(scrolled)
       }
     }
 
@@ -117,9 +115,9 @@ const NavBarContainer = ({ children, ...props }) => {
       pl={8}
       pt={3}
       pb={3}
-      bg={['#234152', scrolled ? '#234152' : 'transparent']}
+      bg={['#111111', scrolled ? '#111111' : 'transparent']}
       color={["white", "white", "primary.700", "primary.700"]}
-      boxShadow={[scrolled ? '1px 1px 2px 0px #0b1c26' : 'transparent']}
+      boxShadow={[scrolled ? '1px 1px 2px 0px #333333' : 'transparent']}
       zIndex="9999"
       {...props}
     >

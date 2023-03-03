@@ -6,6 +6,7 @@ import Projects from './components/Projects.js'
 import Technology from './components/Technology.js'
 import Artworks from './components/Artworks.js'
 import Contacts from './components/Contacts.js'
+import Section from './components/Section.js'
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { ChakraProvider, Spacer, Box } from '@chakra-ui/react'
@@ -21,26 +22,15 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box
-        paddingTop={{ base: "env(safe-area-inset-top)", md: "0" }}
-        paddingBottom={{ base: "env(safe-area-inset-bottom)", md: "0" }}
-        paddingLeft={{ base: "env(safe-area-inset-left)", md: "0" }}
-        paddingRight={{ base: "env(safe-area-inset-right)", md: "0" }}
-        bg='#234152'
-      >
+      <Box>
         <Router>
           <NavigationBar/>
           <Banner/>
-          <Spacer height='15vh' layerStyle="aboutMe"/>
-          <AboutMe/>
-          <Spacer height='20vh' layerStyle="aboutMe"/>
-          <Projects/>
-          <Spacer height='15vh' layerStyle="projects"/>
-          <Technology/>
-          <Spacer height='15vh' layerStyle="aboutMe"/>
-          <Artworks/>
-          <Spacer height='15vh' layerStyle="artworks"/>
-          <Contacts/>
+          <Section paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
+          <Section paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
+          <Section paddingTop='20vh' section={<Technology/>} layerStyle='technology'/>
+          <Section paddingTop='20vh' section={<Artworks/>} layerStyle='artworks'/>
+          <Section paddingTop='20vh' section={<Contacts/>} layerStyle='contacts'/>
           <Spacer height='8vh' layerStyle="artworks"/>
         </Router>
       </Box>

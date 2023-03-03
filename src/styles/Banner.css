@@ -1,7 +1,7 @@
 
 .banner_bg-image {
   background-image: linear-gradient(
-    to bottom, transparent, 75%, #234152
+    to bottom, transparent, 75%, #111111
   ), url("../img/zelda72.png");
   height: 100vh;
   background-position: center;

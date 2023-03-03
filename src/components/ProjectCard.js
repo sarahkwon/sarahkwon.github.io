@@ -5,7 +5,7 @@ import TechTag from './TechTag'
 const ProjectCard = (props) => {
   const { image, name, description, tags } = props
   return (
-    <Card maxW='sm' p='0.5' bg='white'>
+    <Card maxW='sm' p='0.5' bg='#333333' >
       <CardBody>
         <Image 
           src={image}

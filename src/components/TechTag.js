@@ -4,7 +4,7 @@ const TechTag = (props) => {
   const {text} = props
 
   return (
-    <Tag bg='pink.200'>
+    <Tag bg='#46a6d4'>
       {text}
     </Tag>
   )

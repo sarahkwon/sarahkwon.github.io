@@ -13,10 +13,10 @@ const Banner = () => {
               query={['Sarah']}
               styles={{ px: '2', py: '1', bg: 'green.100' }}
             >
-              Hii, I'm Sarah :-)
+              Hi! I'm Sarah Kwon
             </Highlight>
           </Heading>
-          <Heading textStyle='h4' size='xl' as='h4'>Artwork by: me</Heading>
+          <Heading textStyle='h4' size='xl' as='h4'>A developer</Heading>
         </SimpleGrid>
       </Center>
     </Box>

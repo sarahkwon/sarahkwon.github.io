@@ -19,7 +19,7 @@ const AboutMe = () => {
               
             </Flex>
             <Flex maxWidth='md' justifyContent='center' alignItems='center'>
-              <Image boxShadow={['3vw 3vw #0c1e2d', '1.5vw 1.5vw #0c1e2d']} src={CatPic} alt="yeehaw-cat"/>
+              <Image boxShadow={['3vw 3vw #c992a5', '1.5vw 1.5vw #c992a5']} src={CatPic} alt="yeehaw-cat"/>
             </Flex>
         </Stack>
       </Center>

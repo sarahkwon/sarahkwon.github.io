@@ -17,22 +17,22 @@ const theme = extendTheme({
     },
     cardHeader: {
       fontWeight: 600,
-      color: 'black',
+      color: 'white',
     },
     cardText: {
       fontWeight: 400,
-      color: 'black',
+      color: '#CCCCCC',
       fontSize: '16px'
     }
   },
   layerStyles: {
     aboutMe: {
-      backgroundColor: '#234152',
+      backgroundColor: '#111111',
       paddingLeft: '25px',
       paddingRight: '25px'
     },
     projects: {
-      backgroundColor: '#234152',
+      backgroundColor: '#111111',
     },
     banner: {
       paddingRight: '25px',
@@ -41,13 +41,13 @@ const theme = extendTheme({
     technology: {
       paddingRight: '25px',
       paddingLeft: '25px',
-      backgroundColor: '#234152'
+      backgroundColor: '#111111'
     },
     artworks: {
-      backgroundColor: '#234152'
+      backgroundColor: '#111111'
     },
     contacts: {
-      backgroundColor: '#234152'
+      backgroundColor: '#111111'
     }
   },
   fonts: {

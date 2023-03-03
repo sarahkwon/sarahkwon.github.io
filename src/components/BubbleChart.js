@@ -14,11 +14,10 @@ HC_patternFill(Highcharts);
 
 
 const BubbleChart = (data) => {
-  console.log(data)
   const options = {
     chart: {
       type: "packedbubble",
-      backgroundColor: '#5da3b6',
+      backgroundColor: 'transparent',
       height: '100%',
       borderRadius: '50px'
     },

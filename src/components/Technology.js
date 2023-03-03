@@ -1,11 +1,14 @@
 import Header from './Header'
 import TechCard from './TechCard'
 import BubbleChart from './BubbleChart'
+import MiniGuy from './MiniGuy'
 
-import { Box, Container, SimpleGrid, Center} from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Center, Image } from '@chakra-ui/react'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm, DiHtml5} from 'react-icons/di'
-import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3} from 'react-icons/si'
+import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC} from 'react-icons/si'
+
+import Korok from '../img/korok.gif'
 
 const data = [
   {
@@ -67,14 +70,27 @@ const data = [
     name: 'HTML',
     type: 'Language',
     value: 70
+  },
+  {
+    icon: <SiCplusplus/>,
+    name: 'C++',
+    type: 'Language',
+    value: 95
+  },
+  {
+    icon: <SiC/>,
+    name: 'C',
+    type: 'Language',
+    value: 80
   }
 ]
 
 const Technology = () => {
 
   return (
-    <Box id="technology" layerStyle='technology' paddingTop='50px'>
-      <Header text="Technologies" highlight={["Technologies"]} color="pink.200" textColor='black'/>
+    <Box id="technology" layerStyle='technology' paddingTop='25px'>
+      <MiniGuy image={Korok} maxSize='75px'/>
+      <Header text="Technologies" highlight={["Technologies"]} color="#66b16c" textColor='black'/>
       <Container maxW='7xl'>
         <SimpleGrid columns={[1, 1, 2]}>
             <Center>
