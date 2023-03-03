@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7271036.css",
-    "main.js": "/static/js/main.43db8eaf.js",
+    "main.css": "/static/css/main.12b3da03.css",
+    "main.js": "/static/js/main.998dab1b.js",
     "static/js/787.ddbbacb2.chunk.js": "/static/js/787.ddbbacb2.chunk.js",
     "static/media/LinyouMaoMao.png": "/static/media/LinyouMaoMao.21a562d04ba1cad2a05e.png",
     "static/media/SORA_AND_WINNIE_FINAL.jpg": "/static/media/SORA_AND_WINNIE_FINAL.ffc553e82a4e88edb49e.jpg",
@@ -24,6 +24,7 @@
     "static/media/SageChrys.png": "/static/media/SageChrys.353266cbb0bf79e9a268.png",
     "static/media/sage.png": "/static/media/sage.7581f002ed9ed4c2eb25.png",
     "static/media/killjoy.png": "/static/media/killjoy.612f8be2134dd26a3c35.png",
+    "static/media/korok.gif": "/static/media/korok.c74de91ec3135749ecc2.gif",
     "static/media/ffgddgg.jpg": "/static/media/ffgddgg.6e7abdb7246336d1326a.jpg",
     "static/media/jett_witch3.png": "/static/media/jett_witch3.a87d7c90754414e272f6.png",
     "static/media/jettdodole2.png": "/static/media/jettdodole2.ee671609a4b6ad52219f.png",
@@ -37,11 +38,7 @@
     "static/media/bearMS.png": "/static/media/bearMS.ea7e9171143f0f598935.png",
     "static/media/CuteGirl.png": "/static/media/CuteGirl.6ab8465fd97e50bf2b76.png",
     "static/media/jett_chill_lel.png": "/static/media/jett_chill_lel.519b4b5b0314d5174661.png",
-    "static/media/ToolLily.png": "/static/media/ToolLily.f616e2ea2ddd51898b30.png",
     "static/media/real_best_gamer.jpg": "/static/media/real_best_gamer.7187cdb417596babcb1e.jpg",
-    "static/media/LanguageLily.png": "/static/media/LanguageLily.6b77a45009353e11421a.png",
-    "static/media/BackendLily.png": "/static/media/BackendLily.fafc4b6c685e53c5e95a.png",
-    "static/media/FrontendLily.png": "/static/media/FrontendLily.965275cb899ea5f86ed9.png",
     "static/media/raleway-all-700-normal.woff": "/static/media/raleway-all-700-normal.42089e13b4274eeece4b.woff",
     "static/media/raleway-all-400-normal.woff": "/static/media/raleway-all-400-normal.98e7ff86f2b9a46e19cc.woff",
     "static/media/Juice.png": "/static/media/Juice.92845c172fd063fba6fc.png",
@@ -49,6 +46,7 @@
     "static/media/montserrat-all-500-normal.woff": "/static/media/montserrat-all-500-normal.124bdbbc44b5aae423df.woff",
     "static/media/raleway-latin-700-normal.woff2": "/static/media/raleway-latin-700-normal.bc3c769b66664fe6f48b.woff2",
     "static/media/raleway-latin-400-normal.woff2": "/static/media/raleway-latin-400-normal.0bdecdd83e78d540c297.woff2",
+    "static/media/silentPrincess.png": "/static/media/silentPrincess.c2ee1efddde5dbd39cb3.png",
     "static/media/raleway-latin-ext-700-normal.woff2": "/static/media/raleway-latin-ext-700-normal.6d201a3047b8f455e26f.woff2",
     "static/media/raleway-latin-ext-400-normal.woff2": "/static/media/raleway-latin-ext-400-normal.e2c3693083a044bed680.woff2",
     "static/media/montserrat-latin-500-normal.woff2": "/static/media/montserrat-latin-500-normal.38a674fae449557fef97.woff2",
@@ -56,6 +54,7 @@
     "static/media/raleway-cyrillic-ext-700-normal.woff2": "/static/media/raleway-cyrillic-ext-700-normal.53904db59a847704f57b.woff2",
     "static/media/raleway-cyrillic-700-normal.woff2": "/static/media/raleway-cyrillic-700-normal.e9cdcdcdaa07490f17c3.woff2",
     "static/media/raleway-cyrillic-400-normal.woff2": "/static/media/raleway-cyrillic-400-normal.f7d0cc4bf9cf8da4f023.woff2",
+    "static/media/Link.png": "/static/media/Link.c290a5e32e7bda6b3baf.png",
     "static/media/montserrat-latin-ext-500-normal.woff2": "/static/media/montserrat-latin-ext-500-normal.55783c8fab145f4cf828.woff2",
     "static/media/montserrat-cyrillic-ext-500-normal.woff2": "/static/media/montserrat-cyrillic-ext-500-normal.55f256ccdce4bc180e81.woff2",
     "static/media/montserrat-cyrillic-500-normal.woff2": "/static/media/montserrat-cyrillic-500-normal.b62b244b7a2132b30f78.woff2",
@@ -63,12 +62,12 @@
     "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.bb6f51e1b67ec8802d57.woff2",
     "static/media/montserrat-vietnamese-500-normal.woff2": "/static/media/montserrat-vietnamese-500-normal.0f3d20baf3dff383f36b.woff2",
     "index.html": "/index.html",
-    "main.d7271036.css.map": "/static/css/main.d7271036.css.map",
-    "main.43db8eaf.js.map": "/static/js/main.43db8eaf.js.map",
+    "main.12b3da03.css.map": "/static/css/main.12b3da03.css.map",
+    "main.998dab1b.js.map": "/static/js/main.998dab1b.js.map",
     "787.ddbbacb2.chunk.js.map": "/static/js/787.ddbbacb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7271036.css",
-    "static/js/main.43db8eaf.js"
+    "static/css/main.12b3da03.css",
+    "static/js/main.998dab1b.js"
   ]
 }
