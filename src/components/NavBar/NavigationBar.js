@@ -91,7 +91,7 @@ const NavBarContainer = ({ children, ...props }) => {
   //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > window.innerHeight) {
         setScrolled(true)
       } else {
         setScrolled(false)
