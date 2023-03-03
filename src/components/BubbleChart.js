@@ -3,6 +3,11 @@ import highchartsMore from 'highcharts/highcharts-more'
 import HighchartsReact from 'highcharts-react-official'
 import HC_patternFill from "highcharts-pattern-fill";
 
+import LilyBackend from '../img/lilypads/BackendLily.png'
+import LilyFrontend from '../img/lilypads/FrontendLily.png'
+import LilyTool from '../img/lilypads/ToolLily.png'
+import LilyLanguage from '../img/lilypads/LanguageLily.png'
+
 highchartsMore(Highcharts);
 HC_patternFill(Highcharts);
 
@@ -13,8 +18,9 @@ const BubbleChart = (data) => {
   const options = {
     chart: {
       type: "packedbubble",
-      backgroundColor: '#234152',
+      backgroundColor: '#5da3b6',
       height: '100%',
+      borderRadius: '50px'
     },
     title: {
       text: ''
@@ -45,7 +51,7 @@ const BubbleChart = (data) => {
           gravitationalConstant: 0.02
         },
         dataLabels: {
-          enabled: true,
+          enabled: false,
           useHTML: true,
           format: '{point.name}'
         },
@@ -69,11 +75,39 @@ const BubbleChart = (data) => {
     },
     series: [
       {
-        name: "Technologies",
-        data: data.data,
-        color: '#66b16c'
+        name: "Frontend",
+        data: data.data.filter((item) => item.type === 'Frontend'),
+        color: '#66b16c',
+        marker: {
+          symbol: `url(${LilyFrontend})`
+        }
             
-      }]
+      },
+      {
+        name: "Backend",
+        data: data.data.filter((item) => item.type === 'Backend'),
+        color: '#66b16c',
+        marker: {
+          symbol: `url(${LilyBackend})`
+        }
+      },
+      {
+        name: "Tool",
+        data: data.data.filter((item) => item.type === 'Tool'),
+        color: '#66b16c',
+        marker: {
+          symbol: `url(${LilyTool})`
+        }
+      },
+      {
+        name: "Language",
+        data: data.data.filter((item) => item.type === 'Language'),
+        color: '#66b16c',
+        marker: {
+          symbol: `url(${LilyLanguage})`
+        }
+      }
+    ]
     }
 
   return (

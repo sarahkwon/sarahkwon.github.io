@@ -11,51 +11,61 @@ const data = [
   {
     icon: <DiReact/>,
     name: 'React.js',
+    type: 'Frontend',
     value: 80
   },
   {
     icon: <DiMongodb/>,
     name: 'MongoDB',
+    type: 'Backend',
     value: 50
   },
   {
     icon: <DiNodejsSmall/>,
     name: 'Node.js',
+    type: 'Backend',
     value: 65
   },
   {
     icon: <DiNpm/>,
     name: 'npm',
+    type: 'Tool',
     value: 75
   },
   {
     icon: <SiChakraui/>,
     name: 'Chakra UI',
+    type : 'Frontend',
     value: 80
   },
   {
     icon: <SiEslint/>,
     name: 'Eslint',
+    type: 'Tool',
     value: 50
   },
   {
     icon: <SiJest/>,
     name: 'JEST',
+    type: 'Tool',
     value: 40
   },
   {
     icon: <SiJavascript/>,
     name: 'Javascript',
+    type: 'Language',
     value: 80
   },
   {
     icon: <SiCss3/>,
     name: 'CSS',
+    type: 'Language',
     value: 60
   },
   {
     icon: <DiHtml5/>,
     name: 'HTML',
+    type: 'Language',
     value: 70
   }
 ]
@@ -74,8 +84,8 @@ const Technology = () => {
                   })}
                 </SimpleGrid>
             </Center>
-            <Box>
-                <BubbleChart data={data.map((item) => ({ name: item.name, value: item.value, icon: item.icon })
+            <Box paddingTop='15px'>
+                <BubbleChart data={data.map((item) => ({ name: item.name, value: item.value, type: item.type })
                 )}/>
             </Box>
         </SimpleGrid>
