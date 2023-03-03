@@ -88,9 +88,8 @@ const data = [
 
 const Technology = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.15,
     triggerOnce: true,
-    rootMargin: "0px 0px -10% 0px", // Wait until the element is 20% from the viewport bottom
   })
 
   return (
@@ -98,12 +97,12 @@ const Technology = () => {
       <MiniGuy image={Korok} maxSize='75px'/>
       <Header text="Technologies" highlight={["Technologies"]} color="#66b16c" textColor='black'/>
       <Container maxW='7xl'>
-        <SimpleGrid columns={[1, 1, 2]}>
+        <SimpleGrid columns={[1, 1, 2]} ref={ref}>
             <Center>
                 <SimpleGrid columns={[1, 1, 2]} spacing={3} w='95%'>
                   {data.map((item, idx) => {
                     return (
-                      <SlideFade in={inView} ref={ref} offsetX="-30px">
+                      <SlideFade in={inView} offsetX="-30px">
                         <TechCard key={idx} icon={item.icon} name={item.name}/>
                       </SlideFade>
                     )

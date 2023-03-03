@@ -44,8 +44,7 @@ const projects = [
 
 const Projects= () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
-    rootMargin: "0px 0px -10% 0px", // Wait until the element is 50px from the viewport bottom
+    threshold: 0.15,
     triggerOnce: true
     
   })
@@ -54,11 +53,11 @@ const Projects= () => {
     <Box paddingTop='50px'>
         <MiniGuy image={SilentPrincess} maxSize='75px'/>
         <Header text="Projects" highlight={['Projects']} color='#46a6d4' textColor='black'/>
-          <Container maxW='7xl'>
+          <Container maxW='7xl' ref={ref}>
             <SimpleGrid columns={[1, 3, 3]} spacing={5}>
                 {projects.map((project) => {
                   return (
-                      <SlideFade in={inView} offsetY='40px' transition='once' ref={ref}>
+                      <SlideFade in={inView} offsetY='40px' transition='once'>
                         <ProjectCard 
                           key={project.id} 
                           id={project.id} 
