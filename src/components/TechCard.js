@@ -1,7 +1,9 @@
 import { Card, HStack, Box, CardBody } from '@chakra-ui/react'
 import { IconContext } from 'react-icons'
 
-const TechCard =(name, icon) => {
+const TechCard = (props) => {
+  const { name, icon } = props
+
   return (
     <Card bg='#333333'>
       <CardBody>

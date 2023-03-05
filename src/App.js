@@ -1,5 +1,5 @@
 import './App.css'
-import NavigationBar from './components/NavBar/NavigationBar.js'
+// import NavigationBar from './components/NavBar/NavigationBar.js'
 import Banner from './components/Banner.js'
 import AboutMe from './components/AboutMe.js'
 import Projects from './components/Projects.js'
@@ -9,7 +9,7 @@ import Contacts from './components/Contacts.js'
 import Section from './components/Section.js'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import { ChakraProvider, Spacer, Box } from '@chakra-ui/react'
+import { ChakraProvider, Box, Spacer } from '@chakra-ui/react'
 import theme from './theme'
 
 import '@fontsource/raleway/700.css'
@@ -22,7 +22,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box bg='#111111'>
         <Router>
-          <NavigationBar/>
+          {/* <NavigationBar/> */}
           <Banner/>
           <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
           <Section id='projects' paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>

@@ -13,13 +13,17 @@ HC_patternFill(Highcharts)
 
 
 
-const BubbleChart = (data) => {
+const BubbleChart = (props) => {
+  const data = props
   const options = {
+    accessibility: {
+      enabled: false
+    },
     chart: {
       type: 'packedbubble',
       backgroundColor: 'transparent',
       height: '100%',
-      borderRadius: '50px'
+      borderRadius: '50'
     },
     title: {
       text: ''
@@ -56,7 +60,7 @@ const BubbleChart = (data) => {
         },
         states: {
           normal: {
-            opacity: 0.5,
+            opacity: 0.75,
             fillColor: 'rgba(70,146,102,0.5)',
             borderWidth: 10,
           },

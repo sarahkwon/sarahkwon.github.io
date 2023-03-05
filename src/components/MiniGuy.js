@@ -2,7 +2,8 @@ import { Center, Image, SlideFade } from '@chakra-ui/react'
 
 import { useInView } from 'react-intersection-observer'
 
-const MiniGuy = (image, maxSize) => {
+const MiniGuy = (props) => {
+  const { image, maxSize } = props
 
   const { ref, inView } = useInView({
     threshold: 0.5,

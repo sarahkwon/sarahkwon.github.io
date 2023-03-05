@@ -3,7 +3,8 @@ import '../styles/Header.css'
 import { Highlight, Box, Center, Heading, Spacer, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
-const Header = (text, highlight, color, textColor) => {
+const Header = (props) => {
+  const { text, highlight, color, textColor } = props
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,

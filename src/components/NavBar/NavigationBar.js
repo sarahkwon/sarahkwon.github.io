@@ -44,7 +44,8 @@ const MenuIcon = () => (
   </svg>
 )
 
-const MenuToggle = ( toggle, isOpen ) => {
+const MenuToggle = (props) => {
+  const { toggle, isOpen } = props
   return (
     <Box display={{ base: 'block', md: 'none' }} onClick={toggle}>
       {isOpen ? <CloseIcon /> : <MenuIcon />}
@@ -52,7 +53,8 @@ const MenuToggle = ( toggle, isOpen ) => {
   )
 }
 
-const MenuItem = ( children, to = '/', ...rest ) => {
+const MenuItem = (props) => {
+  const { children, to = '/', ...rest } = props
   return (
     <Link href={to}>
       <Text display='block' {...rest}>
