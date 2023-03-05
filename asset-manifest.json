@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.569a37c6.css",
+    "main.css": "/static/css/main.27adf350.css",
     "main.js": "/static/js/main.8ad35c2d.js",
     "static/js/787.ddbbacb2.chunk.js": "/static/js/787.ddbbacb2.chunk.js",
     "static/media/SORA_AND_WINNIE_FINAL-min.png": "/static/media/SORA_AND_WINNIE_FINAL-min.ffc553e82a4e88edb49e.png",
@@ -62,12 +62,12 @@
     "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.bb6f51e1b67ec8802d57.woff2",
     "static/media/montserrat-vietnamese-500-normal.woff2": "/static/media/montserrat-vietnamese-500-normal.0f3d20baf3dff383f36b.woff2",
     "index.html": "/index.html",
-    "main.569a37c6.css.map": "/static/css/main.569a37c6.css.map",
+    "main.27adf350.css.map": "/static/css/main.27adf350.css.map",
     "main.8ad35c2d.js.map": "/static/js/main.8ad35c2d.js.map",
     "787.ddbbacb2.chunk.js.map": "/static/js/787.ddbbacb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.569a37c6.css",
+    "static/css/main.27adf350.css",
     "static/js/main.8ad35c2d.js"
   ]
 }
