@@ -13,7 +13,7 @@ const theme = extendTheme({
     text: {
       fontWeight: 400,
       color: '#CCCCCC',
-      fontSize: ['14px', '14px', '16px']
+      fontSize: ['14px', '16px']
     },
     cardHeader: {
       fontWeight: 600,
@@ -22,7 +22,7 @@ const theme = extendTheme({
     cardText: {
       fontWeight: 400,
       color: '#CCCCCC',
-      fontSize: '16px'
+      fontSize: ['14px', '16px']
     },
     cardTypeText: {
       fontWeight: 600,
