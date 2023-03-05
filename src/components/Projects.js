@@ -1,5 +1,3 @@
-// import '../styles/AboutMe.css'
-
 import Header from './Header'
 import MiniGuy from './MiniGuy'
 import { Box, SlideFade } from '@chakra-ui/react'
@@ -12,8 +10,6 @@ import SilentPrincess from '../img/silentPrincess.png'
 import Campus from '../img/campusMapDemo.png'
 import Potion from '../img/PotionShop.png'
 import Maple from '../img/bearMS.png'
-
-import '../styles/Projects.css'
 
 const projects = [
   {

@@ -5,8 +5,6 @@ import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/a
 
 import { Box, Link, HStack, Container } from '@chakra-ui/react'
 
-import '../styles/Socials.css'
-
 const Socials = () => {
 
   return (

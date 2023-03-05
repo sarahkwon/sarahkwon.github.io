@@ -1,5 +1,3 @@
-import '../styles/Header.css'
-
 import { Highlight, Box, Center, Heading, Spacer, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
