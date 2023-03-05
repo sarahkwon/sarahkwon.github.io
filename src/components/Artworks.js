@@ -53,7 +53,7 @@ const Artworks = () => {
             </Box>
           </Collapse>
           <Center pt={5}>
-            <Button onClick={handleShowMore}>{showMore ? 'Show Less' : 'Show More'}</Button>
+            <Button onClick={handleShowMore} bg='#b5d2d8'>{showMore ? 'Show Less' : 'Show More'}</Button>
           </Center>
         </Container>
       </SlideFade>

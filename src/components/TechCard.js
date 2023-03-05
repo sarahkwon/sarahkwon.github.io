@@ -5,7 +5,14 @@ const TechCard = (props) => {
   const { name, icon } = props
 
   return (
-    <Card bg='#333333'>
+    <Card
+      bg='#333333'
+      _hover = {{
+        transitionDuration: '.05s',
+        bg:'#444444',
+        transitionTimingFunction: 'ease-in-out'
+      }}
+    >
       <CardBody>
         <HStack>
           <Box maxW='md' textStyle='h4' color='#66b16c'>
