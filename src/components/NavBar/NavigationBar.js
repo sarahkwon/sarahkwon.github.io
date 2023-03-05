@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link, Box, Flex, Text, Stack } from '@chakra-ui/react'
 import { aboutMeColor, technologyColor, projectsColor, artworksColor, contactsColor } from '../../utils/Colors'
 
@@ -8,11 +8,12 @@ import Logo from './Logo'
 
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false)
+  const { scrolled } = props
 
   const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <NavBarContainer {...props}>
+    <NavBarContainer scrolled={scrolled}>
       <Logo
         w='100px'
         color={['white', 'white', 'primary.500', 'primary.500']}
@@ -23,7 +24,7 @@ const NavigationBar = (props) => {
         }}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
+      <MenuLinks isOpen={isOpen} scrolled={scrolled}/>
     </NavBarContainer>
   )
 }
@@ -60,14 +61,18 @@ const MenuToggle = (props) => {
 }
 
 const MenuItem = (props) => {
-  const { children, to = '/', hoverColor, ...rest } = props
+  const { children, to = '/', hoverColor, scrolled, ...rest } = props
+  console.log(scrolled)
   return (
     <Link
       href={to}
+      padding='0 5px 0 5px'
       _hover = {{
         textDecoration: 'none',
         transitionDuration: '.2s',
-        color: hoverColor,
+        color: scrolled ? hoverColor : 'black',
+        bg: scrolled ? 'rgba(0,0,0,0)' : hoverColor,
+        borderRadius: scrolled ? '0px' : '5px',
         transform: 'scale(1.1)',
         transitionTimingFunction: 'ease-in-out'
       }}
@@ -80,7 +85,7 @@ const MenuItem = (props) => {
 }
 
 const MenuLinks = ( props ) => {
-  const { isOpen } = props
+  const { isOpen, scrolled } = props
   return (
     <Box
       display={{ base: isOpen ? 'block' : 'none', md: 'block' }}
@@ -93,33 +98,17 @@ const MenuLinks = ( props ) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to='#aboutMe' hoverColor={aboutMeColor}>About</MenuItem>
-        <MenuItem to='#projects' hoverColor={projectsColor}>Projects</MenuItem>
-        <MenuItem to='#technology' hoverColor={technologyColor}>Technology</MenuItem>
-        <MenuItem to='#artworks' hoverColor={artworksColor}>Artworks</MenuItem>
-        <MenuItem to='#contacts' hoverColor={contactsColor}>Contact</MenuItem>
+        <MenuItem to='#aboutMe' hoverColor={aboutMeColor} scrolled={scrolled}>About</MenuItem>
+        <MenuItem to='#projects' hoverColor={projectsColor} scrolled={scrolled}>Projects</MenuItem>
+        <MenuItem to='#technology' hoverColor={technologyColor} scrolled={scrolled}>Technology</MenuItem>
+        <MenuItem to='#artworks' hoverColor={artworksColor} scrolled={scrolled}>Artworks</MenuItem>
+        <MenuItem to='#contacts' hoverColor={contactsColor} scrolled={scrolled}>Contact</MenuItem>
       </Stack>
     </Box>
   )
 }
 
-const NavBarContainer = ( { children, props } ) => {
-  const [scrolled, setScrolled] = useState(false)
-
-  //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-
-    window.addEventListener('scroll', onScroll)
-
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [scrolled])
+const NavBarContainer = ( { children, scrolled } ) => {
 
   return (
     <Flex
@@ -137,7 +126,6 @@ const NavBarContainer = ( { children, props } ) => {
       color={['white', 'white', 'primary.700', 'primary.700']}
       boxShadow={[scrolled ? '1px 1px 2px 0px #333333' : 'transparent']}
       zIndex='9999'
-      {...props}
     >
       {children}
     </Flex>

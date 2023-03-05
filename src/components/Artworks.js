@@ -43,7 +43,8 @@ const Artworks = () => {
               sx={{ columnCount: [1, 2, 3, 4, 5], columnGap: '4px' }}>
               {images.map((image) => {
                 return (
-                  <Image key={image}
+                  <Image
+                    key={image}
                     src={image}
                     d='inline-block'
                     alt='img'
