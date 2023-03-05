@@ -23,6 +23,10 @@ const theme = extendTheme({
       fontWeight: 400,
       color: '#CCCCCC',
       fontSize: '16px'
+    },
+    cardTypeText: {
+      fontWeight: 600,
+      color: '#46a6d4'
     }
   },
   layerStyles: {
@@ -53,6 +57,13 @@ const theme = extendTheme({
   fonts: {
     heading: 'Raleway, sans-serif',
     body: 'Montserrat, serif',
+  },
+  colors: {
+    brand: {
+      50: '#f7fafc',
+      500: '#718096',
+      900: '#171923',
+    }
   }
 })
 
