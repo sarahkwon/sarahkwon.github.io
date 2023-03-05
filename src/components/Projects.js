@@ -1,5 +1,6 @@
 import Header from './Header'
 import MiniGuy from './MiniGuy'
+import { projectsColor } from '../utils/Colors'
 import { Box, SlideFade } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 import { useInView } from 'react-intersection-observer'
@@ -52,7 +53,7 @@ const Projects= () => {
   return (
     <Box paddingTop='50px'>
       <MiniGuy image={SilentPrincess} maxSize='75px'/>
-      <Header text='Projects' highlight={['Projects']} color='#46a6d4' textColor='black'/>
+      <Header text='Projects' highlight={['Projects']} color={projectsColor} textColor='black'/>
       <Container maxW='7xl' ref={ref}>
         <SimpleGrid columns={[1, 3, 3]} spacing={5}>
           {projects.map((project) => {
@@ -66,6 +67,7 @@ const Projects= () => {
                   description={project.description}
                   link={project.link}
                   tags={project.tags}
+                  color={projectsColor}
                 />
               </SlideFade>
             )

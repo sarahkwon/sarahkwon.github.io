@@ -2,6 +2,7 @@ import Header from './Header'
 import TechCard from './TechCard'
 import BubbleChart from './BubbleChart'
 import MiniGuy from './MiniGuy'
+import { technologyColor } from '../utils/Colors'
 
 import { Box, Container, SimpleGrid, Center, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
@@ -95,7 +96,7 @@ const Technology = () => {
   return (
     <Box layerStyle='technology' paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
-      <Header text='Technologies' highlight={['Technologies']} color='#66b16c' textColor='black'/>
+      <Header text='Technologies' highlight={['Technologies']} color={technologyColor} textColor='black'/>
       <Container maxW='7xl'>
         <SimpleGrid columns={[1, 1, 2]} ref={ref}>
           <Center>
@@ -103,7 +104,7 @@ const Technology = () => {
               {data.map((item, idx) => {
                 return (
                   <SlideFade key={idx} in={inView} offsetX='-30px'>
-                    <TechCard icon={item.icon} name={item.name}/>
+                    <TechCard icon={item.icon} name={item.name} color={technologyColor}/>
                   </SlideFade>
                 )
               })}

@@ -2,7 +2,7 @@ import { Card, HStack, Box, CardBody } from '@chakra-ui/react'
 import { IconContext } from 'react-icons'
 
 const TechCard = (props) => {
-  const { name, icon } = props
+  const { name, icon, color } = props
 
   return (
     <Card
@@ -15,7 +15,7 @@ const TechCard = (props) => {
     >
       <CardBody>
         <HStack>
-          <Box maxW='md' textStyle='h4' color='#66b16c'>
+          <Box maxW='md' textStyle='h4' color={color}>
             <IconContext.Provider value={{ className: 'global-class-name', size: ['2em'] }}>
               <div>
                 {icon}

@@ -1,0 +1,5 @@
+export const aboutMeColor = '#c992a5'
+export const projectsColor = '#46a6d4'
+export const technologyColor = '#66b16c'
+export const artworksColor = '#b5d2d8'
+export const contactsColor = '#e2b464'

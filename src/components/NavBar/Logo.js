@@ -1,12 +1,12 @@
-import { Box, Text, Image } from '@chakra-ui/react'
+import { Box, Link, Image } from '@chakra-ui/react'
 import Kino from '../../img/kinoSprite1.png'
 
 export default function Logo(props) {
   return (
     <Box {...props}>
-      <Text fontSize="lg" fontWeight="bold">
+      <Link href='#'>
         <Image src={Kino} alt="Sarah"/>
-      </Text>
+      </Link>
     </Box>
   )
 }

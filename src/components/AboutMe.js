@@ -2,6 +2,7 @@ import Header from './Header'
 import CatPic from '../img/yeehaw-cat.png'
 
 import { useInView } from 'react-intersection-observer'
+import { aboutMeColor } from '../utils/Colors'
 
 import { Flex, Center, Text, Stack, Box, Image, SlideFade } from '@chakra-ui/react'
 
@@ -14,7 +15,7 @@ const AboutMe = () => {
 
   return (
     <Box layerStyle='aboutMe'>
-      <Header text='About Me' highlight={['About']} color='pink.200' textColor='black' />
+      <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
         <Stack direction={['column', 'row']} spacing={10}>
           <Flex maxWidth='md' justifyContent='center' alignItems='center'>
@@ -30,7 +31,7 @@ const AboutMe = () => {
           </Flex>
           <Flex maxWidth='md' justifyContent='center' alignItems='center'>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
-              <Image boxShadow={['3vw 3vw #c992a5', '1.5vw 1.5vw #c992a5']} src={CatPic} alt='yeehaw-cat'/>
+              <Image boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]} src={CatPic} alt='yeehaw-cat'/>
             </SlideFade>
           </Flex>
         </Stack>

@@ -1,9 +1,9 @@
 import { Tag } from '@chakra-ui/react'
 
 const TechTag = (props) => {
-  const { text } = props
+  const { text, color } = props
   return (
-    <Tag bg='#46a6d4'>
+    <Tag bg={color}>
       {text}
     </Tag>
   )

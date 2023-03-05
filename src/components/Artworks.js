@@ -1,4 +1,5 @@
 import Header from './Header'
+import { artworksColor } from '../utils/Colors'
 
 import { useState } from 'react'
 import { Box, Container, Image, Button, Center, Collapse, SlideFade } from '@chakra-ui/react'
@@ -30,7 +31,7 @@ const Artworks = () => {
 
   return (
     <Box layerStyle='artworks'>
-      <Header text='My Art :)' highlight={['Art']} color='#b5d2d8' textColor='black'/>
+      <Header text='My Art :)' highlight={['Art']} color={artworksColor} textColor='black'/>
       <SlideFade ref={ref} in={inView} offsetY='-50px'>
         <Container maxW='7xl' >
           <Collapse startingHeight='500px' in={showMore} >
@@ -53,7 +54,7 @@ const Artworks = () => {
             </Box>
           </Collapse>
           <Center pt={5}>
-            <Button onClick={handleShowMore} bg='#b5d2d8'>{showMore ? 'Show Less' : 'Show More'}</Button>
+            <Button onClick={handleShowMore} bg={artworksColor}>{showMore ? 'Show Less' : 'Show More'}</Button>
           </Center>
         </Container>
       </SlideFade>

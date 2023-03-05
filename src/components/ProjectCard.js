@@ -4,14 +4,14 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import TechTag from './TechTag'
 
 const CardHeader = (props) => {
-  const { name, link } = props
+  const { name, link, color } = props
 
   return (
     <Link href={link}
       _hover={{
         textDecoration: 'none',
         transitionDuration: '.3s',
-        boxShadow: ['inset 20em 0 0 0 #46a6d4'],
+        boxShadow: [`inset 20em 0 0 0 ${color}`],
         transitionTimingFunction: 'ease-in-out'
       }}>
       <Heading textStyle='cardHeader' size='md'>
@@ -23,12 +23,12 @@ const CardHeader = (props) => {
 }
 
 const ProjectCard = (props) => {
-  const { image, name, description, tags, type, link } = props
+  const { image, name, description, tags, type, link, color } = props
   return (
     <Card
       _hover = {{
         transitionDuration: '.3s',
-        border: '2px solid #46a6d4',
+        border: `2px solid ${color}`,
         transitionTimingFunction: 'ease-in-out'
       }}
       border = '2px solid transparent'
@@ -43,7 +43,7 @@ const ProjectCard = (props) => {
         />
         <Stack mt='4'>
           <Text textStyle='cardTypeText'>{type}</Text>
-          <CardHeader name={name} link={link}/>
+          <CardHeader name={name} link={link} color={color}/>
           <Text textStyle='cardText'>
             {description}
           </Text>
@@ -53,7 +53,7 @@ const ProjectCard = (props) => {
         <Wrap>
           {tags.map((tag, idx) => (
             <Box key={idx}>
-              <TechTag text={tag}/>
+              <TechTag text={tag} color={color}/>
             </Box>
           ))}
         </Wrap>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Box, Flex, Text, Stack } from '@chakra-ui/react'
+import { aboutMeColor, technologyColor, projectsColor, artworksColor, contactsColor } from '../../utils/Colors'
 
 import '../../styles/NavigationBar.css'
 
@@ -15,6 +16,11 @@ const NavigationBar = (props) => {
       <Logo
         w='100px'
         color={['white', 'white', 'primary.500', 'primary.500']}
+        _hover={{
+          transitionDuration: '.2s',
+          transform: 'scale(1.1)',
+          transitionTimingFunction: 'ease-in-out'
+        }}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
@@ -54,9 +60,18 @@ const MenuToggle = (props) => {
 }
 
 const MenuItem = (props) => {
-  const { children, to = '/', ...rest } = props
+  const { children, to = '/', hoverColor, ...rest } = props
   return (
-    <Link href={to}>
+    <Link
+      href={to}
+      _hover = {{
+        textDecoration: 'none',
+        transitionDuration: '.2s',
+        color: hoverColor,
+        transform: 'scale(1.1)',
+        transitionTimingFunction: 'ease-in-out'
+      }}
+    >
       <Text display='block' {...rest}>
         {children}
       </Text>
@@ -78,11 +93,11 @@ const MenuLinks = ( props ) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to='#aboutMe'>About</MenuItem>
-        <MenuItem to='#projects'>Projects</MenuItem>
-        <MenuItem to='#technology'>Technology</MenuItem>
-        <MenuItem to='#artworks'>Artworks</MenuItem>
-        <MenuItem to='#contacts'>Contact</MenuItem>
+        <MenuItem to='#aboutMe' hoverColor={aboutMeColor}>About</MenuItem>
+        <MenuItem to='#projects' hoverColor={projectsColor}>Projects</MenuItem>
+        <MenuItem to='#technology' hoverColor={technologyColor}>Technology</MenuItem>
+        <MenuItem to='#artworks' hoverColor={artworksColor}>Artworks</MenuItem>
+        <MenuItem to='#contacts' hoverColor={contactsColor}>Contact</MenuItem>
       </Stack>
     </Box>
   )
