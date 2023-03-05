@@ -116,8 +116,8 @@ const NavBarContainer = ( { children, props } ) => {
       w='100%'
       pr={8}
       pl={8}
-      pt={3}
-      pb={3}
+      pt={[1, 2]}
+      pb={[1, 2]}
       bg={['#111111', scrolled ? '#111111' : 'transparent']}
       color={['white', 'white', 'primary.700', 'primary.700']}
       boxShadow={[scrolled ? '1px 1px 2px 0px #333333' : 'transparent']}
