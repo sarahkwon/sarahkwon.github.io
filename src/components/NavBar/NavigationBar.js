@@ -64,7 +64,8 @@ const MenuItem = (props) => {
   )
 }
 
-const MenuLinks = ( isOpen ) => {
+const MenuLinks = ( props ) => {
+  const { isOpen } = props
   return (
     <Box
       display={{ base: isOpen ? 'block' : 'none', md: 'block' }}
@@ -87,7 +88,7 @@ const MenuLinks = ( isOpen ) => {
   )
 }
 
-const NavBarContainer = ( children, ...props ) => {
+const NavBarContainer = ( { children, props } ) => {
   const [scrolled, setScrolled] = useState(false)
 
   //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar

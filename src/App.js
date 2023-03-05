@@ -1,5 +1,5 @@
 import './App.css'
-// import NavigationBar from './components/NavBar/NavigationBar.js'
+import NavigationBar from './components/NavBar/NavigationBar.js'
 import Banner from './components/Banner.js'
 import AboutMe from './components/AboutMe.js'
 import Projects from './components/Projects.js'
@@ -22,7 +22,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box bg='#111111'>
         <Router>
-          {/* <NavigationBar/> */}
+          <NavigationBar/>
           <Banner/>
           <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
           <Section id='projects' paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
