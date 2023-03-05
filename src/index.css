@@ -1,6 +1,9 @@
 
-html {
-  padding: env(safe-area-inset);
+@media (max-width: 768px) {
+  html {
+    padding: env(safe-area-inset);
+    viewport-fit: cover;
+  }
 }
 
 body {
