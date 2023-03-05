@@ -15,10 +15,6 @@ The project's interface was built using Chakra UI and styled with the Chakra UI'
 
 The site is fully responsive for all devices
 
-## WIP
-
-Still need to add a bit more functionality
-
 ## Lessons Learned so Far:
 
 The most important thing I learned here is to take my time. A couple times I found myself rushing to get everything in which, as expected, resulted in messy code. 
