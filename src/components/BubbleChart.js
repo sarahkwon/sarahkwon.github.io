@@ -1,22 +1,22 @@
 import Highcharts from 'highcharts'
 import highchartsMore from 'highcharts/highcharts-more'
 import HighchartsReact from 'highcharts-react-official'
-import HC_patternFill from "highcharts-pattern-fill";
+import HC_patternFill from 'highcharts-pattern-fill'
 
 import LilyBackend from '../img/lilypads/BackendLily.png'
 import LilyFrontend from '../img/lilypads/FrontendLily.png'
 import LilyTool from '../img/lilypads/ToolLily.png'
 import LilyLanguage from '../img/lilypads/LanguageLily.png'
 
-highchartsMore(Highcharts);
-HC_patternFill(Highcharts);
+highchartsMore(Highcharts)
+HC_patternFill(Highcharts)
 
 
 
 const BubbleChart = (data) => {
   const options = {
     chart: {
-      type: "packedbubble",
+      type: 'packedbubble',
       backgroundColor: 'transparent',
       height: '100%',
       borderRadius: '50px'
@@ -34,15 +34,15 @@ const BubbleChart = (data) => {
       },
       pointFormat: (
         '<b>{point.name}</b>'
-    )
+      )
     },
     legend: {
       enabled: false,
     },
     plotOptions: {
       packedbubble: {
-        minSize: "50%",
-        maxSize: "100%",
+        minSize: '50%',
+        maxSize: '100%',
         //zMin: 0,
         //zMax: 1000,
         layoutAlgorithm: {
@@ -67,23 +67,21 @@ const BubbleChart = (data) => {
               size: 10,
               opacity: 1
             },
-            
           }
         }
       }
     },
     series: [
       {
-        name: "Frontend",
+        name: 'Frontend',
         data: data.data.filter((item) => item.type === 'Frontend'),
         color: '#66b16c',
         marker: {
           symbol: `url(${LilyFrontend})`
         }
-            
       },
       {
-        name: "Backend",
+        name: 'Backend',
         data: data.data.filter((item) => item.type === 'Backend'),
         color: '#66b16c',
         marker: {
@@ -91,7 +89,7 @@ const BubbleChart = (data) => {
         }
       },
       {
-        name: "Tool",
+        name: 'Tool',
         data: data.data.filter((item) => item.type === 'Tool'),
         color: '#66b16c',
         marker: {
@@ -99,7 +97,7 @@ const BubbleChart = (data) => {
         }
       },
       {
-        name: "Language",
+        name: 'Language',
         data: data.data.filter((item) => item.type === 'Language'),
         color: '#66b16c',
         marker: {
@@ -107,7 +105,7 @@ const BubbleChart = (data) => {
         }
       }
     ]
-    }
+  }
 
   return (
     <span>

@@ -27,8 +27,6 @@ const Socials = () => {
           </Link>
         </HStack>
       </Container>
-     
-      
     </Box>
   )
 }

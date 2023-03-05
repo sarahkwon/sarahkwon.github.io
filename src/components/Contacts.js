@@ -16,9 +16,7 @@ const Contacts = () => {
           <Text textStyle="text" textAlign="center">Feel free to contact me if you have any questions or want to connect! </Text>
           <Socials/>
         </VStack>
-        
       </Center>
-      
     </Box>
   )
 }

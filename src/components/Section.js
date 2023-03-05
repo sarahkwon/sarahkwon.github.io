@@ -1,10 +1,9 @@
 import { Spacer, Box } from '@chakra-ui/react'
 
-const Section = (props) => {
-  const { paddingTop, layerStyle, section, id } = props
+const Section = (paddingTop, layerStyle, section, id) => {
 
   return (
-    <Box id={id}> 
+    <Box id={id}>
       <Spacer height={paddingTop} layerStyle={layerStyle}/>
       {section}
     </Box>

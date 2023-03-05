@@ -2,20 +2,19 @@ import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Wrap } from '@
 
 import TechTag from './TechTag'
 
-const ProjectCard = (props) => {
-  const { image, name, description, tags } = props
+const ProjectCard = (image, name, description, tags) => {
   return (
     <Card maxW='sm' p='0.5' bg='#333333' >
       <CardBody>
-        <Image 
+        <Image
           src={image}
           alt='alt'
           borderRadius='md'
         />
         <Stack mt='6'>
-            <Heading textStyle='cardHeader' size='md'>
-              {name}
-            </Heading>
+          <Heading textStyle='cardHeader' size='md'>
+            {name}
+          </Heading>
           <Text textStyle='cardText'>
             {description}
           </Text>

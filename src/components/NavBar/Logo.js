@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image } from '@chakra-ui/react'
 import Kino from '../../img/kinoSprite1.png'
 
 export default function Logo(props) {
@@ -9,5 +8,5 @@ export default function Logo(props) {
         <Image src={Kino} alt="Sarah"/>
       </Text>
     </Box>
-  );
+  )
 }

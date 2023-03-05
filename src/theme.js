@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
   textStyles: {
@@ -51,8 +51,8 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    heading: `'Raleway', sans-serif`,
-    body: `'Montserrat', serif`,
+    heading: 'Raleway, sans-serif',
+    body: 'Montserrat, serif',
   }
 })
 
