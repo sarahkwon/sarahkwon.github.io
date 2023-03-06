@@ -26,7 +26,6 @@ const theme = extendTheme({
     },
     cardTypeText: {
       fontWeight: 600,
-      color: '#46a6d4'
     }
   },
   layerStyles: {

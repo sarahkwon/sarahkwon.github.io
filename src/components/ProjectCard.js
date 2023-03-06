@@ -42,7 +42,7 @@ const ProjectCard = (props) => {
           borderRadius='md'
         />
         <Stack mt='4'>
-          <Text textStyle='cardTypeText'>{type}</Text>
+          <Text textStyle='cardTypeText' color={color}>{type}</Text>
           <CardHeader name={name} link={link} color={color}/>
           <Text textStyle='cardText'>
             {description}
