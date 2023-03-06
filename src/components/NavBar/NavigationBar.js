@@ -94,9 +94,10 @@ const MenuLinks = ( props ) => {
       <Stack
         spacing={8}
         align='center'
-        justify={['center', 'space-between', 'flex-end', 'flex-end']}
-        direction={['column', 'row', 'row', 'row']}
+        justify={['center', 'center', 'flex-end', 'flex-end']}
+        direction={['column', 'column', 'row', 'row']}
         pt={[4, 4, 0, 0]}
+        pb={[4, 4, 0, 0]}
       >
         <MenuItem to='#aboutMe' hoverColor={aboutMeColor} scrolled={scrolled}>About</MenuItem>
         <MenuItem to='#projects' hoverColor={projectsColor} scrolled={scrolled}>Projects</MenuItem>
