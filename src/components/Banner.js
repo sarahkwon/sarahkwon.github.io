@@ -1,5 +1,6 @@
 import { Heading, Highlight, Center, Box, SimpleGrid, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
+import { bannerColor } from '../utils/Colors'
 
 import '../styles/Banner.css'
 
@@ -19,7 +20,7 @@ const Banner = () => {
             <Heading textStyle='h2' size='3xl' as='h2'>
               <Highlight
                 query={['Sarah']}
-                styles={{ px: '2', py: '1', bg: 'green.100' }}
+                styles={{ px: '2', py: '1', bg: `${bannerColor}` }}
               >
               Hi! I&apos;m Sarah Kwon
               </Highlight>

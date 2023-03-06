@@ -1,4 +1,3 @@
-import './App.css'
 import { useState, useEffect } from 'react'
 import NavigationBar from './components/NavBar/NavigationBar.js'
 import Banner from './components/Banner.js'
