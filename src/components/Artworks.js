@@ -1,23 +1,14 @@
-import Header from './Header'
-import { artworksColor } from '../utils/Colors'
-
 import { useState } from 'react'
 import { Box, Container, Image, Button, Center, Collapse, SlideFade } from '@chakra-ui/react'
-
 import { useInView } from 'react-intersection-observer'
+import { artworksColor } from '../utils/Colors'
+import imageUtils from '../utils/ImageUtils'
+import Header from './Header'
 
-const images = []
-function importAll(r) {
-  r.keys().forEach((key) => {
-    images.push(r(key))
-  })
-}
-
-importAll(require.context('../img/artworks', false, /\.(png|jpe?g|svg)$/))
+const images = imageUtils.importImages()
 
 const Artworks = () => {
   const [showMore, setShowMore] = useState(false)
-
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
