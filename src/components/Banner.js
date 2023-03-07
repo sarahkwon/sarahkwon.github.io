@@ -20,14 +20,14 @@ const Banner = () => {
             <Heading textStyle='h2' size='3xl' as='h2'>
               <Highlight
                 query={['Sarah']}
-                styles={{ px: '2', py: '1', bg: `${bannerColor}` }}
+                styles={{ px: '1', py: '0', bg: `${bannerColor}` }}
               >
               Hi! I&apos;m Sarah Kwon
               </Highlight>
             </Heading>
           </SlideFade>
           <SlideFade ref={ref} in={inView} offsetY='30px'>
-            <Heading textStyle='h4' size='xl' as='h4'>A developer</Heading>
+            <Heading textStyle='h4' size='xl' as='h4'>A front-end developer</Heading>
           </SlideFade>
         </SimpleGrid>
       </Center>
