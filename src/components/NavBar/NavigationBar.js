@@ -121,11 +121,12 @@ const NavBarContainer = ( { children, scrolled } ) => {
       w='100%'
       pr={8}
       pl={8}
-      pt={[1, 2]}
-      pb={[1, 2]}
-      bg={['#111111', scrolled ? '#111111' : 'transparent']}
+      pt={1}
+      pb={1}
+      bg={['rgba(17,17,17, 0.5)', scrolled ? 'rgba(17,17,17, 0.5)' : 'transparent']}
       color={['white', 'white', 'primary.700', 'primary.700']}
-      boxShadow={[scrolled ? '1px 1px 2px 0px #333333' : 'transparent']}
+      backdropFilter="auto"
+      backdropBlur={[scrolled ? '4px' : 'transparent']}
       zIndex='9999'
     >
       {children}
