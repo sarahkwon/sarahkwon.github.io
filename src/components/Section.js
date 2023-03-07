@@ -4,9 +4,11 @@ const Section = (props) => {
   const { paddingTop, layerStyle, section, id } = props
 
   return (
-    <Box id={id}>
+    <Box>
       <Spacer height={paddingTop} layerStyle={layerStyle}/>
-      {section}
+      <Box id={id} pt='75px'>
+        {section}
+      </Box>
     </Box>
   )
 }

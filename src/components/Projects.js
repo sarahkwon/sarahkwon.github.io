@@ -1,7 +1,7 @@
 import Header from './Header'
 import MiniGuy from './MiniGuy'
 import { projectsColor } from '../utils/Colors'
-import { Box, SlideFade } from '@chakra-ui/react'
+import { Box, SlideFade, Center } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 import { useInView } from 'react-intersection-observer'
 
@@ -58,18 +58,20 @@ const Projects= () => {
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={5}>
           {projects.map((project) => {
             return (
-              <SlideFade key={project.id} in={inView} offsetY='40px' transition='once'>
-                <ProjectCard
-                  id={project.id}
-                  name={project.name}
-                  type={project.type}
-                  image={project.image}
-                  description={project.description}
-                  link={project.link}
-                  tags={project.tags}
-                  color={projectsColor}
-                />
-              </SlideFade>
+              <Center key={project.id} >
+                <SlideFade in={inView} offsetY='40px' transition='once'>
+                  <ProjectCard
+                    id={project.id}
+                    name={project.name}
+                    type={project.type}
+                    image={project.image}
+                    description={project.description}
+                    link={project.link}
+                    tags={project.tags}
+                    color={projectsColor}
+                  />
+                </SlideFade>
+              </Center>
             )
           })}
         </SimpleGrid>
