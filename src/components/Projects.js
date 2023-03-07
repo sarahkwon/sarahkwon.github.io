@@ -18,7 +18,7 @@ const projects = [
     image: `${Maple}`,
     name: 'Bear: MMORPG',
     description: 'A MapleStory emulator with custom features such as a server-wide bingo game, customized NPCs/map designs/quests, and new items.',
-    tags: ['Javascript', 'Java', 'Assembly', 'SQL', 'mySQL Workbench', ],
+    tags: ['Javascript', 'Java', 'mySQL' ],
     link: 'https://github.com/sarahkwon/Bear-Notes',
     type: 'ONLINE GAME'
   },
@@ -27,7 +27,7 @@ const projects = [
     image: `${Campus}`,
     name: 'Interactive Campus Maps',
     description: 'Crowd-sourced platform created to help students navigate around their university campus. Implemented the frontend for the comment section, photo section, and pop-ups.',
-    tags: ['Typescript', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'Redux'],
+    tags: ['Typescript', 'Node.js', 'React.js', 'MongoDB' ],
     link: 'https://github.com/chriscerie/campus-maps',
     type: 'WEB APP'
   },
@@ -51,11 +51,11 @@ const Projects= () => {
   })
 
   return (
-    <Box paddingTop='50px'>
+    <Box padding={['15px', '25px', '25px', '15px']}>
       <MiniGuy image={SilentPrincess} maxSize='75px'/>
       <Header text='Projects' highlight={['Projects']} color={projectsColor} textColor='black'/>
       <Container maxW='7xl' ref={ref}>
-        <SimpleGrid columns={[1, 3, 3]} spacing={5}>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={5}>
           {projects.map((project) => {
             return (
               <SlideFade key={project.id} in={inView} offsetY='40px' transition='once'>

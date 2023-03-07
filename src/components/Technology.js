@@ -7,8 +7,8 @@ import { technologyColor } from '../utils/Colors'
 import { Box, Container, SimpleGrid } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
-import { DiReact, DiMongodb, DiNodejsSmall, DiNpm, DiHtml5 } from 'react-icons/di'
-import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC, SiMysql, SiGit } from 'react-icons/si'
+import { DiReact, DiMongodb, DiNodejsSmall, DiNpm } from 'react-icons/di'
+import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5 } from 'react-icons/si'
 
 import Korok from '../img/korok.gif'
 
@@ -39,7 +39,7 @@ const data = [
   },
   {
     icon: <SiChakraui/>,
-    name: 'Chakra UI',
+    name: 'ChakraUI',
     type : 'Frontend',
     value: 80
   },
@@ -74,7 +74,7 @@ const data = [
     value: 75
   },
   {
-    icon: <DiHtml5/>,
+    icon: <SiHtml5/>,
     name: 'HTML',
     type: 'Language',
     value: 80
@@ -89,13 +89,19 @@ const data = [
     icon: <SiC/>,
     name: 'C',
     type: 'Language',
-    value: 70
+    value: 65
   },
   {
     icon: <SiGit/>,
     name: 'Git',
     type: 'Tool',
     value: 75
+  },
+  {
+    icon: <SiTypescript/>,
+    name: 'Typescript',
+    type: 'Language',
+    value: 70
   }
 ]
 
@@ -115,14 +121,14 @@ const Technology = () => {
       <MiniGuy image={Korok} maxSize='75px'/>
       <Header text='Technologies' highlight={['Technologies']} color={technologyColor} textColor='black'/>
       <Container maxW='7xl'>
-        <SimpleGrid columns={[1, 1, 2]} ref={ref}>
-          <SimpleGrid columns={[1, 1, 2]} spacing={3} w='95%'>
+        <SimpleGrid columns={[1, 1, 1, 2]} ref={ref}>
+          <SimpleGrid columns={1} p='10px'>
+            <TechSubsection data={languageTech} inView={inView} type='Languages'/>
             <TechSubsection data={frontendTech} inView={inView} type='Frontend'/>
             <TechSubsection data={backendTech} inView={inView} type='Backend'/>
-            <TechSubsection data={languageTech} inView={inView} type='Languages'/>
             <TechSubsection data={toolTech} inView={inView} type='Tools'/>
           </SimpleGrid>
-          <Box paddingTop='15px'>
+          <Box position='relative'>
             <BubbleChart data={data}/>
           </Box>
         </SimpleGrid>

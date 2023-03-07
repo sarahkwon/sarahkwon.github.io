@@ -26,15 +26,11 @@ const ProjectCard = (props) => {
   const { image, name, description, tags, type, link, color } = props
   return (
     <Card
-      _hover = {{
-        transitionDuration: '.3s',
-        border: `2px solid ${color}`,
-        transitionTimingFunction: 'ease-in-out'
-      }}
       border = '2px solid transparent'
-      maxW='sm'
+      maxW={['lg', 'md', 'sm']}
       p='0.5'
-      bg='#333333' >
+      bg='#333333'
+    >
       <CardBody>
         <Image
           src={image}

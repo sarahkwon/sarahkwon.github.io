@@ -16,7 +16,7 @@ const TechCard = (props) => {
       <CardBody>
         <HStack>
           <Box maxW='md' textStyle='h4' color={color}>
-            <IconContext.Provider value={{ className: 'global-class-name', size: ['2em'] }}>
+            <IconContext.Provider value={{ className: 'global-class-name', size: ['1.75em'] }}>
               <div>
                 {icon}
               </div>
