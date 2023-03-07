@@ -7,11 +7,6 @@ const TechCard = (props) => {
   return (
     <Card
       bg='#333333'
-      _hover = {{
-        transitionDuration: '.05s',
-        bg:'#444444',
-        transitionTimingFunction: 'ease-in-out'
-      }}
     >
       <CardBody>
         <HStack>
