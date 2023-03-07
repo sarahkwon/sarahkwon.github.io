@@ -8,7 +8,7 @@ import { Flex, Center, Text, Stack, Box, Image, SlideFade } from '@chakra-ui/rea
 
 const AboutMe = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.15,
     triggerOnce: true,
     rootMargin: '0px 0px -10% 0px', // Wait until the element is 20% from the viewport bottom
   })
@@ -17,7 +17,7 @@ const AboutMe = () => {
     <Box layerStyle='aboutMe'>
       <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
-        <Stack direction={['column', 'row']} spacing={10}>
+        <Stack direction={['column', 'column', 'row']} spacing={10}>
           <Flex maxWidth='md' justifyContent='center' alignItems='center'>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
               <Text maxWidth='md' textStyle='text'>
@@ -29,9 +29,12 @@ const AboutMe = () => {
               </Text>
             </SlideFade>
           </Flex>
-          <Flex maxWidth='md' justifyContent='center' alignItems='center'>
+          <Flex maxWidth={['xs','md']} justifyContent='center' alignItems='center'>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
-              <Image boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]} src={CatPic} alt='yeehaw-cat'/>
+              <Image
+                boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]}
+                src={CatPic}
+                alt='A picture of me'/>
             </SlideFade>
           </Flex>
         </Stack>
