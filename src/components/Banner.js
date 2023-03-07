@@ -8,7 +8,7 @@ const Banner = () => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
-    rootMargin: '0px 0px -10% 0px', // Wait until the element is 20% from the viewport bottom
+    rootMargin: '0px 0px -10% 0px', // Wait until the element is 10% from the viewport bottom
   })
 
 

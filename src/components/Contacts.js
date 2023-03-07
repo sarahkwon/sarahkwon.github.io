@@ -1,16 +1,12 @@
 import Header from './Header'
 import Socials from './Socials'
-import MiniGuy from './MiniGuy'
 import { contactsColor } from '../utils/Colors'
 
 import { Box, Center, Text, VStack } from '@chakra-ui/react'
 
-import Link from '../img/Link.png'
-
 const Contacts = () => {
   return (
     <Box id='contacts' layerStyle='contacts'>
-      <MiniGuy image={Link} maxSize='60px'/>
       <Header text="Contact Me" highlight={['Contact']} color={contactsColor} textColor='black'/>
       <Center>
         <VStack p={1}>
