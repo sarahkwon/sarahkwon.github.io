@@ -123,7 +123,7 @@ const NavBarContainer = ( { children, scrolled } ) => {
       pl={8}
       pt={1}
       pb={1}
-      bg={['rgba(17,17,17, 0.5)', scrolled ? 'rgba(17,17,17, 0.5)' : 'transparent']}
+      bg={['rgba(17,17,17, 0.5)', 'rgba(17,17,17, 0.5)', scrolled ? 'rgba(17,17,17, 0.5)' : 'transparent']}
       color={['white', 'white', 'primary.700', 'primary.700']}
       backdropFilter="auto"
       backdropBlur={[scrolled ? '4px' : 'transparent']}
