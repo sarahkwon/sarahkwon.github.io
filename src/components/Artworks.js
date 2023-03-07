@@ -31,7 +31,7 @@ const Artworks = () => {
               w='100%'
               maxW='100%'
               mx='auto'
-              sx={{ columnCount: [1, 2, 3, 4, 5], columnGap: '4px' }}>
+              sx={{ columnCount: [2, 2, 3, 4, 5], columnGap: '4px' }}>
               {images.map((image) => {
                 return (
                   <Image
