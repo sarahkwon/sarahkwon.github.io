@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 @media (max-width: 768px) {
   html {
@@ -5,6 +8,8 @@
     viewport-fit: cover;
   }
 }
+
+
 
 body {
   margin: 0;
