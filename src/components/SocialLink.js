@@ -6,6 +6,7 @@ const SocialLink = (props) => {
   return (
     <Link
       href={link}
+      target='_blank'
       _hover={{
         transitionDuration: '.2s',
         transform: 'scale(1.2)',
