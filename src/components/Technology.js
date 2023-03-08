@@ -4,7 +4,7 @@ import MiniGuy from './MiniGuy'
 import TechSubsection from './TechSubsection'
 import { technologyColor } from '../utils/Colors'
 
-import { Box, Container, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Center } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm } from 'react-icons/di'
@@ -115,7 +115,7 @@ const Technology = () => {
     threshold: 0.15,
     triggerOnce: true,
   })
-
+  //768-1024
   return (
     <Box layerStyle='technology' paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
@@ -128,9 +128,11 @@ const Technology = () => {
             <TechSubsection data={backendTech} inView={inView} type='Backend'/>
             <TechSubsection data={toolTech} inView={inView} type='Tools'/>
           </SimpleGrid>
-          <Box position='relative'>
-            <BubbleChart data={data}/>
-          </Box>
+          <Center>
+            <Container maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>
+              <BubbleChart data={data}/>
+            </Container>
+          </Center>
         </SimpleGrid>
       </Container>
     </Box>

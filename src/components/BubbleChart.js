@@ -8,6 +8,8 @@ import LilyFrontend from '../img/lilypads/FrontendLily.png'
 import LilyTool from '../img/lilypads/ToolLily.png'
 import LilyLanguage from '../img/lilypads/LanguageLily.png'
 
+import { Box } from '@chakra-ui/react'
+
 highchartsMore(Highcharts)
 HC_patternFill(Highcharts)
 
@@ -57,21 +59,6 @@ const BubbleChart = (props) => {
           enabled: false,
           useHTML: true,
           format: '{point.name}'
-        },
-        states: {
-          normal: {
-            opacity: 0.75,
-            fillColor: 'rgba(70,146,102,0.5)',
-            borderWidth: 10,
-          },
-          hover: {
-            opacity: 1,
-            fillColor: 'rgba(70,146,102,1)',
-            halo: {
-              size: 10,
-              opacity: 1
-            },
-          }
         }
       }
     },
@@ -108,13 +95,52 @@ const BubbleChart = (props) => {
           symbol: `url(${LilyLanguage})`
         }
       }
-    ]
+    ],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 768
+        },
+        plotOptions: {
+          packedbubble: {
+            minSize: '50%',
+            maxSize: '85%',
+            //zMin: 0,
+            //zMax: 1000,
+            layoutAlgorithm: {
+              splitSeries: false,
+              gravitationalConstant: 0.02
+            },
+            dataLabels: {
+              enabled: false,
+              useHTML: true,
+              format: '{point.name}'
+            },
+            states: {
+              normal: {
+                opacity: 0.75,
+                fillColor: 'rgba(70,146,102,0.5)',
+                borderWidth: 10,
+              },
+              hover: {
+                opacity: 1,
+                fillColor: 'rgba(70,146,102,1)',
+                halo: {
+                  size: 10,
+                  opacity: 1
+                },
+              }
+            }
+          }
+        }
+      }]
+    }
   }
 
   return (
-    <span>
+    <Box>
       <HighchartsReact highcharts={Highcharts} options={options}/>
-    </span>
+    </Box>
   )
 }
 
