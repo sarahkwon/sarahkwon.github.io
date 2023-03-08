@@ -8,7 +8,7 @@ import { Box, Container, SimpleGrid, Center } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
 import { DiReact, DiMongodb, DiNodejsSmall, DiNpm } from 'react-icons/di'
-import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5, SiExpress } from 'react-icons/si'
+import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5, SiExpress, SiJava } from 'react-icons/si'
 
 import Korok from '../img/korok.gif'
 
@@ -65,7 +65,7 @@ const data = [
     icon: <SiCss3/>,
     name: 'CSS',
     type: 'Language',
-    value: 75
+    value: 78
   },
   {
     icon: <SiMysql/>,
@@ -108,6 +108,12 @@ const data = [
     name: 'Express.js',
     type: 'Backend',
     value: 55
+  },
+  {
+    icon: <SiJava/>,
+    name: 'Java',
+    type: 'Language',
+    value: 78
   }
 ]
 
