@@ -27,7 +27,7 @@ const projects = [
     image: `${Campus}`,
     name: 'Interactive Campus Maps',
     description: 'Crowd-sourced platform created to help students navigate around their university campus. Implemented the frontend for the comment section, photo section, and pop-ups.',
-    tags: ['Typescript', 'Node.js', 'React.js', 'MongoDB' ],
+    tags: ['Typescript', 'Node.js', 'React.js', 'Express.js', 'MongoDB' ],
     link: 'https://github.com/chriscerie/campus-maps',
     type: 'WEB APP'
   },

@@ -6,7 +6,7 @@ import { Box, Center, Text, VStack } from '@chakra-ui/react'
 
 const Contacts = () => {
   return (
-    <Box id='contacts' layerStyle='contacts'>
+    <Box id='contacts' layerStyle='contacts' p={15}>
       <Header text="Contact Me" highlight={['Contact']} color={contactsColor} textColor='black'/>
       <Center>
         <VStack p={1}>
