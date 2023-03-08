@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, Box, Flex, Text, Stack } from '@chakra-ui/react'
 import { aboutMeColor, technologyColor, projectsColor, artworksColor, contactsColor } from '../../utils/Colors'
 
@@ -6,9 +6,24 @@ import '../../styles/NavigationBar.css'
 
 import Logo from './Logo'
 
-const NavigationBar = (props) => {
+const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const { scrolled } = props
+  const [scrolled, setScrolled] = useState(false)
+
+  //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', onScroll)
+
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [scrolled])
 
   const toggle = () => setIsOpen(!isOpen)
 

@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import NavigationBar from './components/NavBar/NavigationBar.js'
 import Banner from './components/Banner.js'
 import AboutMe from './components/AboutMe.js'
@@ -18,28 +17,11 @@ import '@fontsource/montserrat/500.css'
 
 
 function App() {
-  const [scrolled, setScrolled] = useState(false)
-
-  //runs on scroll, when the user gets past a certain point on the screen, it will update the look of the navbar
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-
-    window.addEventListener('scroll', onScroll)
-
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [scrolled])
-
   return (
     <ChakraProvider theme={theme}>
       <Box bg='#111111'>
         <Router>
-          <NavigationBar scrolled={scrolled}/>
+          <NavigationBar/>
           <Banner/>
           <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
           <Section id='projects' paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
