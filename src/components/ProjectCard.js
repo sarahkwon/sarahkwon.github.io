@@ -1,23 +1,16 @@
-import { Box, Card, CardBody, CardFooter, Image, Stack, Heading, Text, Wrap, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Box, Card, CardBody, CardFooter, Image, Stack, Heading, Text, Wrap } from '@chakra-ui/react'
 
 import TechTag from './TechTag'
+import SocialLink from './SocialLink'
+import { AiFillGithub } from 'react-icons/ai'
 
 const CardHeader = (props) => {
-  const { name, link, color } = props
+  const { name } = props
 
   return (
-    <Link href={link}
-      _hover={{
-        textDecoration: 'none',
-        transitionDuration: '.3s',
-        boxShadow: [`inset 20em 0 0 0 ${color}`],
-        transitionTimingFunction: 'ease-in-out'
-      }}>
-      <Heading textStyle='cardHeader' size='md'>
-        {name} <ExternalLinkIcon mx='2px' mb={1}/>
-      </Heading>
-    </Link>
+    <Heading textStyle='cardHeader' size='md'>
+      {name}
+    </Heading>
   )
 
 }
@@ -38,7 +31,10 @@ const ProjectCard = (props) => {
           borderRadius='md'
         />
         <Stack mt='4'>
-          <Text textStyle='cardTypeText' color={color}>{type}</Text>
+          <Wrap>
+            <Text textStyle='cardTypeText' color={color}>{type}</Text>
+            <SocialLink link={link} icon={<AiFillGithub size='24px' color={color}/>}/>
+          </Wrap>
           <CardHeader name={name} link={link} color={color}/>
           <Text textStyle='cardText'>
             {description}
