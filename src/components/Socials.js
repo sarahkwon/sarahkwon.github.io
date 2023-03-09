@@ -11,10 +11,38 @@ const Socials = () => {
     <Box>
       <Container maxW='sm' >
         <HStack>
-          <SocialLink link='https://www.linkedin.com/in/sarah-kwon-651469186/' icon={<AiFillLinkedin size='48px' color='white'/>}/>
-          <SocialLink link='https://github.com/sarahkwon' icon={<AiFillGithub size='48px' color='white'/>}/>
-          <SocialLink link='https://twitter.com/_soonjee' icon={<AiFillTwitterCircle size='48px' color='white'/>}/>
-          <SocialLink link='mailto:sarahkwon0415@gmail.com' icon={<FiMail size='48px' color='white'/>}/>
+          <SocialLink
+            link='https://www.linkedin.com/in/sarah-kwon-651469186/'
+            icon={<AiFillLinkedin size='48px' color='white'/>}
+            label='LinkedIn'
+            bg='white'
+            textColor='black'
+            placement='bottom'
+          />
+          <SocialLink
+            link='https://github.com/sarahkwon'
+            icon={<AiFillGithub size='48px' color='white'/>}
+            label='Github'
+            bg='white'
+            textColor='black'
+            placement='bottom'
+          />
+          <SocialLink
+            link='https://twitter.com/_soonjee'
+            icon={<AiFillTwitterCircle size='48px' color='white'/>}
+            label='Twitter'
+            bg='white'
+            textColor='black'
+            placement='bottom'
+          />
+          <SocialLink
+            link='mailto:sarahkwon0415@gmail.com'
+            icon={<FiMail size='48px' color='white'/>}
+            label='Email'
+            bg='white'
+            textColor='black'
+            placement='bottom'
+          />
         </HStack>
       </Container>
     </Box>

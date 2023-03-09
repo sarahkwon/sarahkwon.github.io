@@ -33,7 +33,14 @@ const ProjectCard = (props) => {
         <Stack mt='4'>
           <Wrap>
             <Text textStyle='cardTypeText' color={color}>{type}</Text>
-            <SocialLink link={link} icon={<AiFillGithub size='24px' color={color}/>}/>
+            <SocialLink
+              link={link}
+              icon={<AiFillGithub size='25px' color={color} label='Github'/>}
+              label='Github'
+              bg={color}
+              textColor='black'
+              placement='top'
+            />
           </Wrap>
           <CardHeader name={name} link={link} color={color}/>
           <Text textStyle='cardText'>
