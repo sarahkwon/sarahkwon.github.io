@@ -6,7 +6,7 @@ const Section = (props) => {
   return (
     <Box>
       <Spacer height={paddingTop} layerStyle={layerStyle}/>
-      <Box id={id} pt='75px'>
+      <Box id={id} pt='75px' tabIndex='0'>
         {section}
       </Box>
     </Box>
