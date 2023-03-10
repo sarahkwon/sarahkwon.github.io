@@ -12,6 +12,7 @@ const Socials = () => {
       <Container maxW='sm' >
         <HStack>
           <SocialLink
+            aria='View my LinkedIn profile'
             link='https://www.linkedin.com/in/sarah-kwon-651469186/'
             icon={<AiFillLinkedin size='48px' color='white'/>}
             label='LinkedIn'
@@ -20,6 +21,7 @@ const Socials = () => {
             placement='bottom'
           />
           <SocialLink
+            aria='View my Github profile'
             link='https://github.com/sarahkwon'
             icon={<AiFillGithub size='48px' color='white'/>}
             label='Github'
@@ -28,6 +30,7 @@ const Socials = () => {
             placement='bottom'
           />
           <SocialLink
+            aria='View my Twitter profile'
             link='https://twitter.com/_soonjee'
             icon={<AiFillTwitterCircle size='48px' color='white'/>}
             label='Twitter'
@@ -36,6 +39,7 @@ const Socials = () => {
             placement='bottom'
           />
           <SocialLink
+            aria='My Email'
             link='mailto:sarahkwon0415@gmail.com'
             icon={<FiMail size='48px' color='white'/>}
             label='Email'

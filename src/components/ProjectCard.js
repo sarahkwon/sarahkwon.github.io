@@ -34,6 +34,7 @@ const ProjectCard = (props) => {
           <Wrap>
             <Text textStyle='cardTypeText' color={color}>{type}</Text>
             <SocialLink
+              aria='Link to Github repository for this project'
               link={link}
               icon={<AiFillGithub size='25px' color={color} label='Github'/>}
               label='Github'
