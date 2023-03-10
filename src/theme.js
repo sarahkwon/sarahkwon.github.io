@@ -13,56 +13,28 @@ const theme = extendTheme({
     text: {
       fontWeight: 400,
       color: '#CCCCCC',
-      fontSize: ['14px', '16px']
+      fontSize: ['14px', '16px'],
+      lineHeight: 1.6
     },
     cardHeader: {
       fontWeight: 600,
       color: 'white',
-    },
-    cardText: {
-      fontWeight: 400,
-      color: '#CCCCCC',
-      fontSize: ['14px', '16px']
     },
     cardTypeText: {
       fontWeight: 600,
     }
   },
   layerStyles: {
-    aboutMe: {
-      backgroundColor: '#111111',
-      paddingLeft: '25px',
-      paddingRight: '25px'
-    },
-    projects: {
-      backgroundColor: '#111111',
-    },
-    banner: {
-      paddingRight: '25px',
-      paddingLeft: '25px'
-    },
-    technology: {
-      paddingRight: '25px',
-      paddingLeft: '25px',
-      backgroundColor: '#111111'
-    },
-    artworks: {
-      backgroundColor: '#111111'
-    },
-    contacts: {
-      backgroundColor: '#111111'
+    section: {
+      maxWidth: '100%',
+      backgroundColor: '#121212',
+      paddingLeft: '16px',
+      paddingRight: '16px'
     }
   },
   fonts: {
     heading: 'Raleway, sans-serif',
     body: 'Montserrat, serif',
-  },
-  colors: {
-    brand: {
-      50: '#f7fafc',
-      500: '#718096',
-      900: '#171923',
-    }
   }
 })
 

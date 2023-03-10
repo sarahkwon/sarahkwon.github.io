@@ -18,15 +18,15 @@ import '@fontsource/montserrat/500.css'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bg='#111111'>
-        <NavigationBar/>
-        <Banner/>
-        <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>} layerStyle='aboutMe'/>
-        <Section id='projects' paddingTop='20vh' section={<Projects/>} layerStyle='projects'/>
-        <Section id='technology' paddingTop='15vh' section={<Technology/>} layerStyle='technology'/>
-        <Section id='artworks' paddingTop='20vh' section={<Artworks/>} layerStyle='artworks'/>
-        <Section id='contacts' paddingTop='20vh' section={<Contacts/>} layerStyle='contacts'/>
-        <Spacer height='8vh' layerStyle="artworks"/>
+      <NavigationBar/>
+      <Banner/>
+      <Box layerStyle='section'>
+        <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>}/>
+        <Section id='projects' paddingTop='20vh' section={<Projects/>}/>
+        <Section id='technology' paddingTop='15vh' section={<Technology/>}/>
+        <Section id='artworks' paddingTop='20vh' section={<Artworks/>}/>
+        <Section id='contacts' paddingTop='20vh' section={<Contacts/>}/>
+        <Spacer height='8vh'/>
       </Box>
     </ChakraProvider>
   )

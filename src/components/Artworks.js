@@ -21,7 +21,7 @@ const Artworks = () => {
   }
 
   return (
-    <Box layerStyle='artworks'>
+    <Box>
       <Header text='My Art :)' highlight={['Art']} color={artworksColor} textColor='black'/>
       <SlideFade ref={ref} in={inView} offsetY='-50px'>
         <Container maxW='7xl' >

@@ -13,7 +13,7 @@ const Banner = () => {
 
 
   return (
-    <Box layerStyle='banner' className='banner_bg-image' id='home'>
+    <Box layerStyle='section' className='banner_bg-image' id='home'>
       <Center h='100%'>
         <SimpleGrid columns={1}>
           <SlideFade ref={ref} in={inView} offsetX='-30px'>

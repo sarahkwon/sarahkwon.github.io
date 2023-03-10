@@ -111,7 +111,7 @@ const Technology = () => {
   })
   //768-1024
   return (
-    <Box layerStyle='technology' paddingTop='25px'>
+    <Box paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
       <Header text='Technologies' highlight={['Technologies']} color={technologyColor} textColor='black'/>
       <Container maxW='7xl'>

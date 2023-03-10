@@ -4,7 +4,7 @@ import CatPic from '../img/yeehaw-cat.png'
 import { useInView } from 'react-intersection-observer'
 import { aboutMeColor } from '../utils/Colors'
 
-import { Flex, Center, Text, Stack, Box, Image, SlideFade } from '@chakra-ui/react'
+import { Center, Text, Stack, Box, Image, SlideFade } from '@chakra-ui/react'
 
 const AboutMe = () => {
   const { ref, inView } = useInView({
@@ -14,13 +14,13 @@ const AboutMe = () => {
   })
 
   return (
-    <Box layerStyle='aboutMe'>
+    <Box>
       <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
         <Stack direction={['column', 'column', 'row']} spacing={10}>
-          <Flex justifyContent='center' alignItems='center'>
+          <Center>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
-              <Text maxWidth='md' textStyle='text' tabIndex='0'>
+              <Text p={[5, 0]} maxWidth='md' textStyle='text' tabIndex='0'>
                 Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with a passion for front-end web development. With an eye for design and attention to detail, I enjoy creating applications that are both visually appealing and user-friendly.
                 <br/>
                 <br/>
@@ -30,16 +30,17 @@ const AboutMe = () => {
                 Whether it&apos;s creating responsive layouts, crafting intuitive UI, or bringing us one step closer to an accessible web, I love bringing ideas to life and turning them into polished and functional applications.
               </Text>
             </SlideFade>
-          </Flex>
-          <Flex maxWidth={['xs','md']} justifyContent='center' alignItems='center'>
+          </Center>
+          <Center>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
               <Image
+                mr={4}
                 tabIndex='0'
                 boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]}
                 src={CatPic}
                 alt='A picture of me'/>
             </SlideFade>
-          </Flex>
+          </Center>
         </Stack>
       </Center>
     </Box>

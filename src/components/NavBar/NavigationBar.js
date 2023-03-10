@@ -77,7 +77,6 @@ const MenuToggle = (props) => {
 
 const MenuItem = (props) => {
   const { children, to = '/', hoverColor, scrolled, ...rest } = props
-  console.log(scrolled)
   return (
     <Link
       href={to}
