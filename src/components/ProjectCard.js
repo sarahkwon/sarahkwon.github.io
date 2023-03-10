@@ -19,6 +19,7 @@ const ProjectCard = (props) => {
   const { image, name, description, tags, type, link, color } = props
   return (
     <Card
+      tabIndex='0'
       border = '2px solid transparent'
       maxW={['lg', 'md', 'sm']}
       p='0.5'

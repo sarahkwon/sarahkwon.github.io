@@ -7,8 +7,8 @@ import { technologyColor } from '../utils/Colors'
 import { Box, Container, SimpleGrid, Center } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
-import { DiReact, DiMongodb, DiNodejsSmall, DiNpm } from 'react-icons/di'
-import { SiChakraui, SiJavascript, SiEslint, SiJest, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5, SiExpress, SiJava } from 'react-icons/si'
+import { DiReact, DiMongodb, DiNodejsSmall } from 'react-icons/di'
+import { SiChakraui, SiJavascript, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5, SiExpress, SiJava } from 'react-icons/si'
 
 import Korok from '../img/korok.gif'
 
@@ -32,28 +32,10 @@ const data = [
     value: 65
   },
   {
-    icon: <DiNpm/>,
-    name: 'npm',
-    type: 'Tool',
-    value: 75
-  },
-  {
     icon: <SiChakraui/>,
     name: 'ChakraUI',
     type : 'Frontend',
     value: 80
-  },
-  {
-    icon: <SiEslint/>,
-    name: 'Eslint',
-    type: 'Tool',
-    value: 50
-  },
-  {
-    icon: <SiJest/>,
-    name: 'JEST',
-    type: 'Tool',
-    value: 40
   },
   {
     icon: <SiJavascript/>,
@@ -141,7 +123,7 @@ const Technology = () => {
             <TechSubsection data={toolTech} inView={inView} type='Tools'/>
           </SimpleGrid>
           <Center>
-            <Container maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>
+            <Container tabIndex='0' maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>
               <BubbleChart data={data}/>
             </Container>
           </Center>

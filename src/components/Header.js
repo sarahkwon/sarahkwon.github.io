@@ -10,7 +10,7 @@ const Header = (props) => {
   })
 
   return (
-    <Box>
+    <Box tabIndex='0'>
       <SlideFade in={inView} ref={ref} offsetY='30px'>
         <Center>
           <Heading
