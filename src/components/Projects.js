@@ -51,14 +51,14 @@ const Projects= () => {
   })
 
   return (
-    <Box padding={['15px', '25px', '25px', '15px']}>
+    <Box>
       <MiniGuy image={SilentPrincess} maxSize='75px'/>
       <Header text='Projects' highlight={['Projects']} color={projectsColor} textColor='black'/>
       <Container maxW='7xl' ref={ref}>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={5}>
           {projects.map((project) => {
             return (
-              <Center key={project.id} >
+              <Center key={project.id}>
                 <SlideFade in={inView} offsetY='40px' transition='once'>
                   <ProjectCard
                     id={project.id}

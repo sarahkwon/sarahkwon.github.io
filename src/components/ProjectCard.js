@@ -19,16 +19,15 @@ const ProjectCard = (props) => {
   const { image, name, description, tags, type, link, color } = props
   return (
     <Card
+      maxW={'lg'}
+      h={{ base: 'auto', md: 'lg', lg: 'lg' }}
       tabIndex='0'
-      border = '2px solid transparent'
-      maxW={['lg', 'md', 'sm']}
-      p='0.5'
       bg='#333333'
     >
       <CardBody>
         <Image
           src={image}
-          alt='alt'
+          alt={`Picture of ${name}`}
           borderRadius='md'
         />
         <Stack mt='4'>
@@ -45,7 +44,7 @@ const ProjectCard = (props) => {
             />
           </Wrap>
           <CardHeader name={name} link={link} color={color}/>
-          <Text textStyle='cardText'>
+          <Text textStyle='text'>
             {description}
           </Text>
         </Stack>
