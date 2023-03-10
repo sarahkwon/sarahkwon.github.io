@@ -18,14 +18,16 @@ const AboutMe = () => {
       <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
         <Stack direction={['column', 'column', 'row']} spacing={10}>
-          <Flex maxWidth='md' justifyContent='center' alignItems='center'>
+          <Flex justifyContent='center' alignItems='center'>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
               <Text maxWidth='md' textStyle='text' tabIndex='0'>
-                Hello! I&apos;m Sarah and I&apos;m a 4th Computer Science major at UCSB.
-                Currently, my interests lie in front-end development and my focus right now is building a solid understanding of React and the tools it offers. In order to accomplish this, I&apos;m taking an online course on full-stack development while building my own applications in parallel.
+                Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with a passion for front-end web development. With an eye for design and attention to detail, I enjoy creating applications that are both visually appealing and user-friendly.
                 <br/>
                 <br/>
-                On my own time, I like to draw, play games, and make cute island designs in Animal Crossing!
+                Throughout my development experience, enhancing the user experience has always been a priority of mine. Even for the games I&apos;ve developed, I placed a strong focus on making interfaces and task flows that were simple and enjoyable for players to follow.
+                <br/>
+                <br/>
+                Whether it&apos;s creating responsive layouts, crafting intuitive UI, or bringing us one step closer to an accessible web, I love bringing ideas to life and turning them into polished and functional applications.
               </Text>
             </SlideFade>
           </Flex>
