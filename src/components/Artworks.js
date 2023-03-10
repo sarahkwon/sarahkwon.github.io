@@ -46,7 +46,7 @@ const Artworks = () => {
             </Box>
           </Collapse>
           <Center pt={5}>
-            <Button onClick={handleShowMore} bg={artworksColor}>{showMore ? 'Show Less' : 'Show More'}</Button>
+            <Button aria-label={showMore ? 'Show Less' : 'Show More'} onClick={handleShowMore} bg={artworksColor}>{showMore ? 'Show Less' : 'Show More'}</Button>
           </Center>
         </Container>
       </SlideFade>
