@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.80ea76e5.css",
-    "main.js": "/static/js/main.0a3f27b8.js",
+    "main.css": "/static/css/main.67b65d67.css",
+    "main.js": "/static/js/main.b504abd8.js",
     "static/js/787.ddbbacb2.chunk.js": "/static/js/787.ddbbacb2.chunk.js",
     "static/media/LinyouMaoMao-min.png": "/static/media/LinyouMaoMao-min.34f09e3ce7240309e134.png",
     "static/media/zelda72.png": "/static/media/zelda72.e8885e78ac6ceb676284.png",
@@ -61,12 +61,12 @@
     "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.bb6f51e1b67ec8802d57.woff2",
     "static/media/montserrat-vietnamese-500-normal.woff2": "/static/media/montserrat-vietnamese-500-normal.0f3d20baf3dff383f36b.woff2",
     "index.html": "/index.html",
-    "main.80ea76e5.css.map": "/static/css/main.80ea76e5.css.map",
-    "main.0a3f27b8.js.map": "/static/js/main.0a3f27b8.js.map",
+    "main.67b65d67.css.map": "/static/css/main.67b65d67.css.map",
+    "main.b504abd8.js.map": "/static/js/main.b504abd8.js.map",
     "787.ddbbacb2.chunk.js.map": "/static/js/787.ddbbacb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ea76e5.css",
-    "static/js/main.0a3f27b8.js"
+    "static/css/main.67b65d67.css",
+    "static/js/main.b504abd8.js"
   ]
 }
