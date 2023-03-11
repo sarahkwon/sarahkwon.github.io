@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import NavigationBar from './components/NavBar/NavigationBar.js'
 import Banner from './components/Banner.js'
 import AboutMe from './components/AboutMe.js'
@@ -10,25 +12,36 @@ import Section from './components/Section.js'
 import { ChakraProvider, Box, Spacer } from '@chakra-ui/react'
 import theme from './theme'
 
-import '@fontsource/raleway/700.css'
-import '@fontsource/raleway/400.css'
-import '@fontsource/montserrat/500.css'
+import '@fontsource/raleway/600.css'
+// import '@fontsource/montserrat/500.css'
+import '@fontsource/montserrat/400.css'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/600.css'
+
+const defaultState = {
+  loading: true
+}
 
 
 function App() {
+  const [loading, setLoading] = useState(defaultState.loading)
+  useEffect(() => { setLoading(false) }, [])
+
   return (
-    <ChakraProvider theme={theme}>
-      <NavigationBar/>
-      <Banner/>
-      <Box layerStyle='section'>
-        <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>}/>
-        <Section id='projects' paddingTop='20vh' section={<Projects/>}/>
-        <Section id='technology' paddingTop='15vh' section={<Technology/>}/>
-        <Section id='artworks' paddingTop='20vh' section={<Artworks/>}/>
-        <Section id='contacts' paddingTop='20vh' section={<Contacts/>}/>
-        <Spacer height='8vh'/>
-      </Box>
-    </ChakraProvider>
+    loading ? <div>hi</div>
+      :<ChakraProvider theme={theme}>
+        <NavigationBar/>
+        <Banner/>
+        <Box layerStyle='section'>
+          <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>}/>
+          <Section id='projects' paddingTop='20vh' section={<Projects/>}/>
+          <Section id='technology' paddingTop='15vh' section={<Technology/>}/>
+          <Section id='artworks' paddingTop='20vh' section={<Artworks/>}/>
+          <Section id='contacts' paddingTop='20vh' section={<Contacts/>}/>
+          <Spacer height='8vh'/>
+        </Box>
+      </ChakraProvider>
   )
 }
 
