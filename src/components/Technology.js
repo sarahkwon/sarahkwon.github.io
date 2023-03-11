@@ -5,7 +5,6 @@ import TechSubsection from './TechSubsection'
 import { technologyColor } from '../utils/Colors'
 
 import { Box, Container, SimpleGrid, Center } from '@chakra-ui/react'
-import { useInView } from 'react-intersection-observer'
 
 import { DiReact, DiMongodb, DiNodejsSmall } from 'react-icons/di'
 import { SiChakraui, SiJavascript, SiCss3, SiCplusplus, SiC, SiMysql, SiGit, SiTypescript, SiHtml5, SiExpress, SiJava } from 'react-icons/si'
@@ -105,22 +104,18 @@ const toolTech = data.filter((item) => item.type === 'Tool').sort((a, b) => b.va
 const languageTech = data.filter((item) => item.type === 'Language').sort((a, b) => b.value - a.value)
 
 const Technology = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.15,
-    triggerOnce: true,
-  })
-  //768-1024
+
   return (
     <Box paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
       <Header text='Technologies' highlight={['Technologies']} color={technologyColor}/>
       <Container maxW='7xl'>
-        <SimpleGrid columns={[1, 1, 1, 2]} ref={ref}>
+        <SimpleGrid columns={[1, 1, 1, 2]}>
           <SimpleGrid columns={1}>
-            <TechSubsection data={languageTech} inView={inView} type='Languages'/>
-            <TechSubsection data={frontendTech} inView={inView} type='Frontend'/>
-            <TechSubsection data={backendTech} inView={inView} type='Backend'/>
-            <TechSubsection data={toolTech} inView={inView} type='Tools'/>
+            <TechSubsection data={languageTech} type='Languages'/>
+            <TechSubsection data={frontendTech} type='Frontend'/>
+            <TechSubsection data={backendTech} type='Backend'/>
+            <TechSubsection data={toolTech} type='Tools'/>
           </SimpleGrid>
           <Center>
             <Container maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>

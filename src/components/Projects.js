@@ -1,9 +1,8 @@
 import Header from './Header'
 import MiniGuy from './MiniGuy'
 import { projectsColor } from '../utils/Colors'
-import { Box, SlideFade, Center } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
-import { useInView } from 'react-intersection-observer'
 
 import { SimpleGrid, Container } from '@chakra-ui/react'
 import SilentPrincess from '../img/silentPrincess.png'
@@ -45,32 +44,26 @@ const projects = [
 
 
 const Projects= () => {
-  const [ref, inView] = useInView({
-    threshold: 0.15,
-    triggerOnce: true
-  })
 
   return (
     <Box>
       <MiniGuy image={SilentPrincess} maxSize='75px'/>
       <Header text='Projects' highlight={['Projects']} color={projectsColor}/>
-      <Container maxW='7xl' ref={ref}>
+      <Container maxW='7xl'>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={5}>
           {projects.map((project) => {
             return (
               <Center key={project.id}>
-                <SlideFade in={inView} offsetY='40px' transition='once'>
-                  <ProjectCard
-                    id={project.id}
-                    name={project.name}
-                    type={project.type}
-                    image={project.image}
-                    description={project.description}
-                    link={project.link}
-                    tags={project.tags}
-                    color={projectsColor}
-                  />
-                </SlideFade>
+                <ProjectCard
+                  id={project.id}
+                  name={project.name}
+                  type={project.type}
+                  image={project.image}
+                  description={project.description}
+                  link={project.link}
+                  tags={project.tags}
+                  color={projectsColor}
+                />
               </Center>
             )
           })}

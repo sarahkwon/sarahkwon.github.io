@@ -8,7 +8,8 @@ import LilyFrontend from '../img/lilypads/FrontendLily.png'
 import LilyTool from '../img/lilypads/ToolLily.png'
 import LilyLanguage from '../img/lilypads/LanguageLily.png'
 
-import { Box } from '@chakra-ui/react'
+import { SlideFade } from '@chakra-ui/react'
+import { useInView } from 'react-intersection-observer'
 
 highchartsMore(Highcharts)
 HC_patternFill(Highcharts)
@@ -137,10 +138,15 @@ const BubbleChart = (props) => {
     }
   }
 
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  })
+
   return (
-    <Box>
+    <SlideFade in={inView} ref={ref} >
       <HighchartsReact highcharts={Highcharts} options={options}/>
-    </Box>
+    </SlideFade>
   )
 }
 
