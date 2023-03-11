@@ -4,7 +4,7 @@ import CatPic from '../img/yeehaw-cat.png'
 import { useInView } from 'react-intersection-observer'
 import { aboutMeColor } from '../utils/Colors'
 
-import { Center, Text, Stack, Box, Image, SlideFade } from '@chakra-ui/react'
+import { Center, Text, Stack, Box, Image, SlideFade, Link } from '@chakra-ui/react'
 
 const AboutMe = () => {
   const { ref, inView } = useInView({
@@ -25,7 +25,10 @@ const AboutMe = () => {
                 <br/>
                 <br/>
                 Currently, the technologies I&apos;m working with are Javascript, React, and Node.js!
+                <br/>
+                <br/>
               </Text>
+              <Link isExternal href='/Sarah_Kwon_Resume.pdf' color={aboutMeColor} textDecoration='underline'>View my resume</Link>
             </SlideFade>
           </Center>
           <Center>
@@ -33,7 +36,8 @@ const AboutMe = () => {
               <Image
                 boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]}
                 src={CatPic}
-                alt='A picture of me'/>
+                alt='A picture of me'
+              />
             </SlideFade>
           </Center>
         </Stack>
