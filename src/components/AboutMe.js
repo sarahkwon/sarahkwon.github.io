@@ -24,10 +24,7 @@ const AboutMe = () => {
                 Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with a passion for front-end web development. With an eye for design and attention to detail, I enjoy creating applications that are both visually appealing and user-friendly.
                 <br/>
                 <br/>
-                Throughout my development experience, enhancing the user experience has always been a priority of mine. Even for the games I&apos;ve developed, I placed a strong focus on making interfaces and task flows that were simple and enjoyable for players to follow.
-                <br/>
-                <br/>
-                Whether it&apos;s creating responsive layouts, crafting intuitive UI, or bringing us one step closer to an accessible web, I love bringing ideas to life and turning them into polished and functional applications.
+                I&apos;m experienced with Javascript, HTML, CSS, and React and I&apos;m always willing to learn more to improve.
               </Text>
             </SlideFade>
           </Center>
