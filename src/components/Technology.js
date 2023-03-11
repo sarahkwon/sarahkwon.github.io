@@ -113,17 +113,17 @@ const Technology = () => {
   return (
     <Box paddingTop='25px'>
       <MiniGuy image={Korok} maxSize='75px'/>
-      <Header text='Technologies' highlight={['Technologies']} color={technologyColor} textColor='black'/>
+      <Header text='Technologies' highlight={['Technologies']} color={technologyColor}/>
       <Container maxW='7xl'>
         <SimpleGrid columns={[1, 1, 1, 2]} ref={ref}>
-          <SimpleGrid columns={1} p='10px'>
+          <SimpleGrid columns={1}>
             <TechSubsection data={languageTech} inView={inView} type='Languages'/>
             <TechSubsection data={frontendTech} inView={inView} type='Frontend'/>
             <TechSubsection data={backendTech} inView={inView} type='Backend'/>
             <TechSubsection data={toolTech} inView={inView} type='Tools'/>
           </SimpleGrid>
           <Center>
-            <Container tabIndex='0' maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>
+            <Container maxW={['7xl', '7xl', '2xl', '2xl', '7xl']}>
               <BubbleChart data={data}/>
             </Container>
           </Center>

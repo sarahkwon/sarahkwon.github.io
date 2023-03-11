@@ -53,7 +53,7 @@ const Projects= () => {
   return (
     <Box>
       <MiniGuy image={SilentPrincess} maxSize='75px'/>
-      <Header text='Projects' highlight={['Projects']} color={projectsColor} textColor='black'/>
+      <Header text='Projects' highlight={['Projects']} color={projectsColor}/>
       <Container maxW='7xl' ref={ref}>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={5}>
           {projects.map((project) => {

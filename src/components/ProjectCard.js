@@ -8,7 +8,7 @@ const CardHeader = (props) => {
   const { name } = props
 
   return (
-    <Heading textStyle='cardHeader' size='md'>
+    <Heading variant='subheading' size='md'>
       {name}
     </Heading>
   )
@@ -21,7 +21,6 @@ const ProjectCard = (props) => {
     <Card
       maxW={'lg'}
       h={{ base: 'auto', md: 'lg', lg: 'lg' }}
-      tabIndex='0'
       bg='#333333'
     >
       <CardBody>

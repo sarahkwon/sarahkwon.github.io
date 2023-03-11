@@ -22,12 +22,11 @@ const Artworks = () => {
 
   return (
     <Box>
-      <Header text='My Art :)' highlight={['Art']} color={artworksColor} textColor='black'/>
+      <Header text='My Art :)' highlight={['Art']} color={artworksColor}/>
       <SlideFade ref={ref} in={inView} offsetY='-50px'>
-        <Container maxW='7xl' >
+        <Container maxW='7xl' p={0}>
           <Collapse startingHeight='500px' in={showMore} >
             <Box
-              padding={4}
               w='100%'
               maxW='100%'
               mx='auto'
@@ -46,7 +45,13 @@ const Artworks = () => {
             </Box>
           </Collapse>
           <Center pt={5}>
-            <Button aria-label={showMore ? 'Show Less' : 'Show More'} onClick={handleShowMore} bg={artworksColor}>{showMore ? 'Show Less' : 'Show More'}</Button>
+            <Button
+              aria-label={showMore ? 'Show Less' : 'Show More'}
+              onClick={handleShowMore}
+              bg={artworksColor}
+            >
+              {showMore ? 'Show Less' : 'Show More'}
+            </Button>
           </Center>
         </Container>
       </SlideFade>

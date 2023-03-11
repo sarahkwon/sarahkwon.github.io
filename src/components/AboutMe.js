@@ -17,22 +17,20 @@ const AboutMe = () => {
     <Box>
       <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
-        <Stack direction={['column', 'column', 'row']} spacing={10}>
+        <Stack direction={['column', 'column', 'row']} spacing={10} padding='25px' pt={0}>
           <Center>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
-              <Text p={[5, 0]} maxWidth='md' textStyle='text' tabIndex='0'>
+              <Text maxWidth='md' textStyle='text'>
                 Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with a passion for front-end web development. With my creative ideas and eye for design, I enjoy creating applications that are both visually appealing and user-friendly.
                 <br/>
                 <br/>
-                I&apos;m experienced with Javascript, HTML, CSS, and React and am always learning more to improve.
+                Currently, the technologies I&apos;m working with are Javascript, React, and Node.js!
               </Text>
             </SlideFade>
           </Center>
           <Center>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
               <Image
-                mr={4}
-                tabIndex='0'
                 boxShadow={[`3vw 3vw ${aboutMeColor}`, `1.5vw 1.5vw ${aboutMeColor}`]}
                 src={CatPic}
                 alt='A picture of me'/>

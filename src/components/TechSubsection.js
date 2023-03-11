@@ -8,8 +8,7 @@ const TechSubsection = (props) => {
   return (
     <SlideFade in={inView} offsetX='-30px'>
       <Heading
-        tabIndex='0'
-        textStyle='cardHeader'
+        variant='subheading'
         size='md'
         pt={4}
         pb={1}

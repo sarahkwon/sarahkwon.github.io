@@ -2,7 +2,7 @@ import { Highlight, Box, Center, Heading, Spacer, SlideFade } from '@chakra-ui/r
 import { useInView } from 'react-intersection-observer'
 
 const Header = (props) => {
-  const { text, highlight, color, textColor } = props
+  const { text, highlight, color } = props
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -10,16 +10,16 @@ const Header = (props) => {
   })
 
   return (
-    <Box tabIndex='0'>
+    <Box>
       <SlideFade in={inView} ref={ref} offsetY='30px'>
         <Center>
           <Heading
-            textStyle='h2'
+            variant='section'
             size='2xl'
           >
             <Highlight
               query={highlight}
-              styles={{ px: '2', py: '1', bg: color, color: textColor }}
+              styles={{ px: '5', bg: `${color}`, color: 'black', borderRadius: '7px', fontWeight: 'bold' }}
             >
               {text}
             </Highlight>
