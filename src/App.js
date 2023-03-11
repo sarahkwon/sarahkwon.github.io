@@ -29,7 +29,7 @@ function App() {
   useEffect(() => { setLoading(false) }, [])
 
   return (
-    loading ? <div>hi</div>
+    loading ? <Box></Box>
       :<ChakraProvider theme={theme}>
         <NavigationBar/>
         <Banner/>
