@@ -2,14 +2,6 @@ import { extendTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
   textStyles: {
-    h2: {
-      fontWeight: 600,
-      color: 'white'
-    },
-    h4: {
-      fontWeight: 400,
-      color: 'white'
-    },
     text: {
       fontWeight: 400,
       color: '#CCCCCC',
@@ -17,11 +9,14 @@ const theme = extendTheme({
       lineHeight: 1.6
     },
     cardHeader: {
-      fontWeight: 600,
+      fontWeight: 'medium',
       color: 'white',
     },
     cardTypeText: {
       fontWeight: 600,
+    },
+    techTag: {
+      fontWeight: 'bold'
     }
   },
   layerStyles: {
@@ -30,11 +25,53 @@ const theme = extendTheme({
       backgroundColor: '#121212',
       paddingLeft: '16px',
       paddingRight: '16px'
+    },
+    artworks: {
+      paddingLeft: '0px',
+      paddingRight: '0px'
     }
   },
   fonts: {
-    heading: 'Raleway, sans-serif',
+    heading: 'Poppins, sans-serif',
     body: 'Montserrat, serif',
+  },
+  fontWeights: {
+    normal: 400,
+    medium: 500,
+    bold: 600
+  },
+  components: {
+    Heading: {
+      variants: {
+        section: {
+          as: 'h4',
+          fontWeight: 'medium',
+          color: 'white'
+        },
+        subheading: {
+          fontWeight: 'bold',
+          color: 'white'
+        },
+        bannerMain: {
+          as: 'h2',
+          textAlign: 'center',
+          color: 'white',
+          fontWeight: 'medium',
+        },
+        bannerSub: {
+          as: 'h4',
+          color: 'white',
+          fontWeight: 'medium'
+        }
+      }
+    },
+    Tag: {
+      variants: {
+        techTag: {
+          fontWeight: 'medium'
+        }
+      }
+    }
   }
 })
 
