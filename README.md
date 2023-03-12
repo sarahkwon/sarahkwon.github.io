@@ -1,6 +1,6 @@
 # My Portfolio Site
 
-![image](https://user-images.githubusercontent.com/55962587/222736834-359ad189-32b8-482b-bbf9-489904147164.png)
+![image](https://user-images.githubusercontent.com/55962587/224522295-680c2470-c3ef-4860-82df-cbfacb163f3a.png)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 
