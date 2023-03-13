@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8792bd48.css",
-    "main.js": "/static/js/main.8fda3ba8.js",
+    "main.css": "/static/css/main.ba4196ae.css",
+    "main.js": "/static/js/main.5502d73a.js",
     "static/js/787.ddbbacb2.chunk.js": "/static/js/787.ddbbacb2.chunk.js",
     "static/media/LinyouMaoMao-min.png": "/static/media/LinyouMaoMao-min.34f09e3ce7240309e134.png",
     "static/media/zelda72.png": "/static/media/zelda72.e8885e78ac6ceb676284.png",
@@ -34,7 +34,6 @@
     "static/media/GirlLookingup.png": "/static/media/GirlLookingup.93d6181d5aefaed7a57d.png",
     "static/media/ZELDA.jpg": "/static/media/ZELDA.0ac57ce923c287a1af5b.jpg",
     "static/media/jett_chill_lel.png": "/static/media/jett_chill_lel.4b1db478ba26ff855222.png",
-    "static/media/raleway-all-600-normal.woff": "/static/media/raleway-all-600-normal.e9a98c9a0c352c633ffc.woff",
     "static/media/WitchGirl.jpg": "/static/media/WitchGirl.e0da3ec4780df156564f.jpg",
     "static/media/poppins-all-400-normal.woff": "/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
     "static/media/poppins-all-600-normal.woff": "/static/media/poppins-all-600-normal.ef66d5cebf31c6a23603.woff",
@@ -49,30 +48,25 @@
     "static/media/poppins-devanagari-500-normal.woff2": "/static/media/poppins-devanagari-500-normal.f43b6ebf46ee6fba0555.woff2",
     "static/media/tanjirou.jpg": "/static/media/tanjirou.6c946415f7eb4298a2b3.jpg",
     "static/media/real_best_gamer.jpg": "/static/media/real_best_gamer.42caae3cc9f874a0b7b1.jpg",
-    "static/media/raleway-latin-600-normal.woff2": "/static/media/raleway-latin-600-normal.81d989fa5063ebf965a4.woff2",
     "static/media/silentPrincess.png": "/static/media/silentPrincess.c2ee1efddde5dbd39cb3.png",
-    "static/media/raleway-latin-ext-600-normal.woff2": "/static/media/raleway-latin-ext-600-normal.2fe3297f1c332c9a0558.woff2",
-    "static/media/raleway-cyrillic-ext-600-normal.woff2": "/static/media/raleway-cyrillic-ext-600-normal.eedf4c41a32a2947e859.woff2",
     "static/media/montserrat-latin-400-normal.woff2": "/static/media/montserrat-latin-400-normal.acb6629fe45c43ad5d8b.woff2",
-    "static/media/raleway-cyrillic-600-normal.woff2": "/static/media/raleway-cyrillic-600-normal.e102f4fd1e4f9dd53059.woff2",
     "static/media/montserrat-latin-ext-400-normal.woff2": "/static/media/montserrat-latin-ext-400-normal.0204ec08a4b574088f02.woff2",
     "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/static/media/montserrat-cyrillic-ext-400-normal.bbf9e820a2563aac0d8b.woff2",
     "static/media/montserrat-cyrillic-400-normal.woff2": "/static/media/montserrat-cyrillic-400-normal.e5c5c19c23e370a342c8.woff2",
     "static/media/poppins-latin-600-normal.woff2": "/static/media/poppins-latin-600-normal.91145014c0350c248ed2.woff2",
     "static/media/poppins-latin-400-normal.woff2": "/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
     "static/media/poppins-latin-500-normal.woff2": "/static/media/poppins-latin-500-normal.08491d3f7fe7ae88ef44.woff2",
-    "static/media/raleway-vietnamese-600-normal.woff2": "/static/media/raleway-vietnamese-600-normal.7686b64aa7c6a69595cc.woff2",
     "static/media/poppins-latin-ext-400-normal.woff2": "/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
     "static/media/poppins-latin-ext-600-normal.woff2": "/static/media/poppins-latin-ext-600-normal.d08f0891e438248ce419.woff2",
     "static/media/poppins-latin-ext-500-normal.woff2": "/static/media/poppins-latin-ext-500-normal.b59bcdf2f050e663ca29.woff2",
     "static/media/montserrat-vietnamese-400-normal.woff2": "/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
     "index.html": "/index.html",
-    "main.8792bd48.css.map": "/static/css/main.8792bd48.css.map",
-    "main.8fda3ba8.js.map": "/static/js/main.8fda3ba8.js.map",
+    "main.ba4196ae.css.map": "/static/css/main.ba4196ae.css.map",
+    "main.5502d73a.js.map": "/static/js/main.5502d73a.js.map",
     "787.ddbbacb2.chunk.js.map": "/static/js/787.ddbbacb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8792bd48.css",
-    "static/js/main.8fda3ba8.js"
+    "static/css/main.ba4196ae.css",
+    "static/js/main.5502d73a.js"
   ]
 }
