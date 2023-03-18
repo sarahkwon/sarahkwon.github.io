@@ -21,7 +21,7 @@ const AboutMe = () => {
           <Center>
             <SlideFade in={inView} ref={ref} offsetY='40px'>
               <Text maxWidth='md' textStyle='text'>
-                Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with a passion for front-end web development. With my creative ideas and eye for design, I enjoy creating applications that are both visually appealing and user-friendly.
+                Hello! I&apos;m Sarah and I&apos;m a 4th year Computer Science major at UCSB with an interest in full-stack development. With my creative ideas and eye for design, I enjoy creating applications that are both visually appealing and user-friendly.
                 <br/>
                 <br/>
                 Currently, the technologies I&apos;m working with are Javascript, React, and Node.js!
