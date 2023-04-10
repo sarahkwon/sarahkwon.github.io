@@ -24,7 +24,7 @@ function App() {
         <Fade in={isReady}>
           <NavigationBar/>
           <Banner/>
-          <Box layerStyle='section'>
+          <Box layerStyle='section' as='main'>
             <Section id='aboutMe' paddingTop='20vh' section={<AboutMe/>}/>
             <Section id='projects' paddingTop='20vh' section={<Projects/>}/>
             <Section id='technology' paddingTop='15vh' section={<Technology/>}/>

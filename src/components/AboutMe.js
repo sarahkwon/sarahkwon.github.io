@@ -4,7 +4,7 @@ import CatPic from '../img/yeehaw-cat.png'
 import { useInView } from 'react-intersection-observer'
 import { aboutMeColor } from '../utils/Colors'
 
-import { Center, Text, Stack, Box, Image, SlideFade, Link } from '@chakra-ui/react'
+import { Center, Text, Stack, Image, SlideFade, Link } from '@chakra-ui/react'
 
 const AboutMe = () => {
   const { ref, inView } = useInView({
@@ -14,7 +14,7 @@ const AboutMe = () => {
   })
 
   return (
-    <Box>
+    <>
       <Header text='About Me' highlight={['About']} color={aboutMeColor} textColor='black' />
       <Center>
         <Stack direction={['column', 'column', 'row']} spacing={10} padding='25px' pt={0}>
@@ -42,7 +42,7 @@ const AboutMe = () => {
           </Center>
         </Stack>
       </Center>
-    </Box>
+    </>
   )
 }
 

@@ -2,11 +2,11 @@ import Header from './Header'
 import Socials from './Socials'
 import { contactsColor } from '../utils/Colors'
 
-import { Box, Center, Text, VStack } from '@chakra-ui/react'
+import { Center, Text, VStack } from '@chakra-ui/react'
 
 const Contacts = () => {
   return (
-    <Box>
+    <>
       <Header text="Contact Me" highlight={['Contact']} color={contactsColor}/>
       <Center>
         <VStack p={1}>
@@ -14,7 +14,7 @@ const Contacts = () => {
           <Socials/>
         </VStack>
       </Center>
-    </Box>
+    </>
   )
 }
 

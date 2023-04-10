@@ -1,4 +1,4 @@
-import { Highlight, Box, Center, Heading, Spacer, SlideFade } from '@chakra-ui/react'
+import { Highlight, Center, Heading, Spacer, SlideFade } from '@chakra-ui/react'
 import { useInView } from 'react-intersection-observer'
 
 const Header = (props) => {
@@ -10,7 +10,7 @@ const Header = (props) => {
   })
 
   return (
-    <Box>
+    <header>
       <SlideFade in={inView} ref={ref} offsetY='30px'>
         <Center>
           <Heading
@@ -27,7 +27,7 @@ const Header = (props) => {
         </Center>
       </SlideFade>
       <Spacer height='36px'/>
-    </Box>
+    </header>
   )
 }
 

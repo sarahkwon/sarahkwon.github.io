@@ -21,7 +21,7 @@ const Artworks = () => {
   }
 
   return (
-    <Box>
+    <>
       <Header text='My Art :)' highlight={['Art']} color={artworksColor}/>
       <SlideFade ref={ref} in={inView} offsetY='-50px'>
         <Container maxW='7xl' p={0}>
@@ -55,7 +55,7 @@ const Artworks = () => {
           </Center>
         </Container>
       </SlideFade>
-    </Box>
+    </>
   )
 }
 

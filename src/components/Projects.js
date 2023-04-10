@@ -10,6 +10,7 @@ import SilentPrincess from '../img/silentPrincess.png'
 import Campus from '../img/campusMapDemo.png'
 import Potion from '../img/PotionShop.png'
 import Maple from '../img/bearMS.png'
+import RestCountries from '../img/restcountries.png'
 
 const projects = [
   {
@@ -38,6 +39,15 @@ const projects = [
     tags: ['C#', 'Unity'],
     link: 'https://github.com/sarahkwon/Potion-Shopkeeper',
     type: 'GAME'
+  },
+  {
+    id: 3,
+    image: `${RestCountries}`,
+    name: 'REST Countries Website',
+    description: 'Web application that fetches and displays data from REST Countries API. Frontend Mentor challenge where given specifications for a design, I imitate the look and implement functionality.',
+    tags: ['JavaScript', 'HTML5', 'CSS3', 'React.js'],
+    link: 'https://github.com/sarahkwon/REST-Countries-Website',
+    type: 'WEB APP'
   }
 ]
 
