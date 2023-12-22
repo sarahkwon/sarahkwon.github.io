@@ -28,7 +28,6 @@ const AboutMe = () => {
                 <br/>
                 <br/>
               </Text>
-              <Link isExternal href='/Sarah_Kwon_Resume.pdf' color={aboutMeColor} textDecoration='underline'>View my resume</Link>
             </SlideFade>
           </Center>
           <Center>
